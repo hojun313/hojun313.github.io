@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "짧/2025-02-20-(짧) 리그오브레전드 시작 페이지.md",
+                "file": "game_thoughts/2023-09-17-브라이어 QoL 편의성 개선 사항.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-02-20-(짧) 리그오브레전드 시작 페이지"
+              "title": "2023-09-17-브라이어 QoL 편의성 개선 사항"
             }
           }
         ],
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "UX",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -222,10 +222,29 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "5367a6fdf6dfd7e7",
+  "active": "1bb93d1fb2c0829e",
   "lastOpenFiles": [
-    "짧/2025-02-08-(짧) 리그오브레전드 제작소 UI.md",
+    "2025-02-03-환경 챌린지 탄소중립과 자원순환 런! 개인정보 처리 방침.zip",
+    "짧/2025-02-08-(짧) 롤 상자 삭제 등.zip",
+    "짧/2025-02-08-(짧) 롤 상자 삭제.zip",
+    "game_review/2023-08-03-Celeste.md",
+    "game_review/2023-08-07-Pikuniku.md",
+    "game_review/2023-07-06-CyberPunk_2077.md",
+    "game_review/2023-07-06-BOUND.md",
+    "game_review/2023-07-13-Microsoft Solitaire & Casual Games.md",
+    "2025-02-27.md",
+    "game_thoughts/2024-01-30-{밸런스}GTAO 페리코 습격의 변경.md",
+    "game_thoughts/2024-01-09-{몰입도}RPG와 플레이어들의 몰입.md",
+    "game_thoughts/2024-01-04-{UX}로스트아크 점핑권 수령.md",
     "짧/2025-02-20-(짧) 리그오브레전드 시작 페이지.md",
+    "game_review/Game Review.md",
+    "blog/2024-06-26-여름 방학과 AI 노예 블로그.md",
+    "game_thoughts/2024-01-24-{사전리뷰}팰월드.md",
+    "game_review/2024-02-26-리뷰) Super Meat Boy Forever.md",
+    "game_review/2024-xx-xx-양식.md",
+    "game_review/2023-08-23-Dead Cells.md",
+    "game_review/2023-08-21-McPixel 3.md",
+    "짧/2025-02-08-(짧) 리그오브레전드 제작소 UI.md",
     "짧/2025-02-08-(짧) 롤 상자 삭제.md",
     "짧/2024-12-25-(짧) 리그오브레전드 월즈 뮤비.md",
     "짧/2024-09-02-(짧) 롤 역할군 메타 변형.md",
@@ -233,24 +252,7 @@
     "2025-02-03-환경 챌린지 탄소중립과 자원순환 런! 개인정보 처리 방침.md",
     "game_thoughts/2025-01-03-{UI}스팀의 평가지표.md",
     "game_thoughts/2024-xx-xx-{양식}양식.md",
-    "game_thoughts/무제 파일 헬테이커.md",
-    "game_thoughts/2024-12-29-{유도}스타듀벨리의 시간이 드는 장비 업그레이드.md",
-    "game_thoughts/2024-12-28-{유도}스타듀벨리 채광과 정동석.md",
-    "game_thoughts/2024-12-29-{}.md",
-    "game_thoughts/2024-xx-xx-{양식}양식 copy.md",
-    "game_thoughts/2024-12-27-{자유도}스타듀벨리의 낚시와 보물.md",
-    "game_thoughts/2024-12-28-{자유도}스타듀벨리의 .md",
-    "game_thoughts/2024-12-28-{자유도}스타듀벨리의 낚시와 보물 copy.md",
-    "game_thoughts/2024-12-26-{유도}스타듀벨리의 기력.md",
-    "2024-12-26.md",
     "무제 파일.canvas",
-    "짧/2024-08-21-(짧)CYGNI 개구려 (리뷰).md",
-    "game_talks/2024-08-28-(주저리) 각 라인의 역할화.md",
-    "game_talks/2024-xx-xx-(주저리)주저리.md",
-    "game_thoughts/2024-08-28-{밸런스}각 라인의 역할화.md",
-    "game_talks/2024-06-28-(주저리)경험, 연륜.md",
-    "짧/2024-08-13-(짧)MSI 위상 높이기.md",
-    "game_thoughts/2024-08-14-{운영}박치기 공룡 메타는 실존하는가.md",
     "영화 리뷰",
     "게임 메모/루덴스 프로젝트 2차 회의 준비) 장르 초안.txt",
     "루덴스 프로젝트",
@@ -261,8 +263,6 @@
     "Pasted image 20240118134903.png",
     "공부",
     "게임 메모/새 텍스트 문서.txt",
-    "game_design",
-    "포트폴리오",
     "game_thoughts/Pasted image 20240108173853.jpg",
     "game_thoughts/Pasted image 20240108173945.jpg"
   ]
