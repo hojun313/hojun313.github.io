@@ -1,0 +1,315 @@
+{
+  "main": {
+    "id": "c163d088dbd04345",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7d18b416324f520",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8dce35eb5b32bb70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "짧/2024-09-02-(짧) 롤 역할군 메타 변형.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-09-02-(짧) 롤 역할군 메타 변형"
+            }
+          },
+          {
+            "id": "f929298c74bdc4c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-02-03-환경 챌린지 탄소중립과 자원순환 런! 개인정보 처리 방침.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-02-03-환경 챌린지 탄소중립과 자원순환 런! 개인정보 처리 방침"
+            }
+          },
+          {
+            "id": "8b9ac4460021daf3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "짧/2025-02-08-(짧) 리그오브레전드 제작소 UI.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-02-08-(짧) 리그오브레전드 제작소 UI"
+            }
+          },
+          {
+            "id": "5367a6fdf6dfd7e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "game_thoughts/2023-09-17-브라이어 QoL 편의성 개선 사항.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2023-09-17-브라이어 QoL 편의성 개선 사항"
+            }
+          },
+          {
+            "id": "7218c944ea1b3ad1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "game_thoughts/2025-05-19-{감상} 세븐나이츠 리버스, 추억과 함께 돌아온 기사의 분석 (UI, UX, 기획).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-05-19-{감상} 세븐나이츠 리버스, 추억과 함께 돌아온 기사의 분석 (UI, UX, 기획)"
+            }
+          },
+          {
+            "id": "569ad7302828c73b",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "0. 다른 메모/정치/정치관련 생각 정리.canvas",
+                "viewState": {
+                  "x": -922.5,
+                  "y": -116,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "정치관련 생각 정리"
+            }
+          },
+          {
+            "id": "141b2f77cccdd8bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. 새로운/나를 알아가는 질문들, 그리고 나의 게임 이야기.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "나를 알아가는 질문들, 그리고 나의 게임 이야기"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f9dffbd50e8ebf6f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ea2b763e5481224",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1bb93d1fb2c0829e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "85b8975bb1808e23",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "UX",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "8f5071f6dcbc1a50",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 217.5
+  },
+  "right": {
+    "id": "a58c36528d6cf103",
+    "type": "split",
+    "children": [
+      {
+        "id": "cfcca033e317d8a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6ac4fb87a7fe666",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "game_thoughts/2024-12-26-{유도}스타듀벨리의 기력.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2024-12-26-{유도}스타듀벨리의 기력의 백링크"
+            }
+          },
+          {
+            "id": "83ccbadaf17816bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "game_review/2024-01-17-GTAO (The Chop shop).md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-01-17-GTAO (The Chop shop)"
+            }
+          },
+          {
+            "id": "4f9604fbb346838d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "game_thoughts/2024-12-26-{유도}스타듀벨리의 기력.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "2024-12-26-{유도}스타듀벨리의 기력의 나가는 링크"
+            }
+          },
+          {
+            "id": "c8d05912d2766ed8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3e4abb24575af09a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "game_thoughts/2024-12-26-{유도}스타듀벨리의 기력.md"
+              },
+              "icon": "lucide-list",
+              "title": "2024-12-26-{유도}스타듀벨리의 기력 개요"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 513.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "1bb93d1fb2c0829e",
+  "lastOpenFiles": [
+    "0. 다른 메모/정치/정치관련 생각 정리.canvas",
+    "1. 새로운/나를 알아가는 질문들, 그리고 나의 게임 이야기.md",
+    "1. 새로운",
+    "2025-02-27.md",
+    "0. 다른 메모/정치",
+    "0. 다른 메모",
+    "무제 파일.canvas",
+    "무제.canvas",
+    "game_thoughts/2025-xx-xx-{양식}양식.md",
+    "game_thoughts/2025-05-19-{감상} 세븐나이츠 리버스, 추억과 함께 돌아온 기사의 분석 (UI, UX, 기획).md",
+    "game_thoughts/2025-01-03-{UI}스팀의 평가지표.md",
+    "짧/2025-02-20-(짧) 리그오브레전드 시작 페이지.md",
+    "game_thoughts/2025-05-19-(Fac) 세븐나이츠 리버스, 추억과 함께 돌아온 기사의 분석 (UI, UX, 기획).md",
+    "factory/무제.md",
+    "짧/2025-02-08-(짧) 리그오브레전드 제작소 UI.md",
+    "2024-02-26-Recycler 개인정보 처리 방침.md",
+    "2023-07-06-first.md",
+    "factory",
+    "2025-02-03-환경 챌린지 탄소중립과 자원순환 런! 개인정보 처리 방침.zip",
+    "짧/2025-02-08-(짧) 롤 상자 삭제 등.zip",
+    "짧/2025-02-08-(짧) 롤 상자 삭제.zip",
+    "game_review/2023-08-03-Celeste.md",
+    "game_review/2023-08-07-Pikuniku.md",
+    "game_review/2023-07-06-CyberPunk_2077.md",
+    "game_review/2023-07-06-BOUND.md",
+    "game_review/2023-07-13-Microsoft Solitaire & Casual Games.md",
+    "game_thoughts/2024-01-30-{밸런스}GTAO 페리코 습격의 변경.md",
+    "game_thoughts/2024-01-09-{몰입도}RPG와 플레이어들의 몰입.md",
+    "game_thoughts/2024-01-04-{UX}로스트아크 점핑권 수령.md",
+    "game_review/Game Review.md",
+    "blog/2024-06-26-여름 방학과 AI 노예 블로그.md",
+    "game_thoughts/2024-01-24-{사전리뷰}팰월드.md",
+    "game_review/2024-02-26-리뷰) Super Meat Boy Forever.md",
+    "game_review/2024-xx-xx-양식.md",
+    "game_review/2023-08-23-Dead Cells.md",
+    "영화 리뷰",
+    "게임 메모/루덴스 프로젝트 2차 회의 준비) 장르 초안.txt",
+    "루덴스 프로젝트",
+    "game_thoughts/엘든링 성소 표사.png",
+    "Pasted image 20240118134903.png",
+    "game_thoughts/Pasted image 20240108173853.jpg",
+    "game_thoughts/Pasted image 20240108173945.jpg"
+  ]
+}
