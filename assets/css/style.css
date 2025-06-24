@@ -33,3 +33,61 @@ body.page-hub {
 .post-list .post-date { color: #A0A0A0; margin-right: 15px; font-size: 0.9rem; }
 .post-list a { color: #BB86FC; text-decoration: none; }
 .post-list a:hover { text-decoration: underline; }
+
+/* assets/css/style.css 파일 맨 아래에 추가 */
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  margin: 0;
+}
+
+.home-link {
+  color: #BB86FC;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.pagination {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination .page-number {
+  color: #888;
+}
+
+.pagination .btn {
+  color: #BB86FC;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #BB86FC;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .btn:hover {
+  background-color: #BB86FC;
+  color: #121212;
+}
+
+.pagination .btn.disabled {
+  color: #555;
+  border-color: #555;
+  cursor: not-allowed;
+}
+.pagination .btn.disabled:hover {
+  background-color: transparent;
+  color: #555;
+}

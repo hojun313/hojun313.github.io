@@ -1,4 +1,12 @@
+# _config.yml
 title: Hojun's Hub
 description: "A hub for my thoughts, projects, and everything in between."
 url: "https://hojun313.github.io"
 markdown: kramdown
+
+# --- 아래 내용을 추가하거나 기존 내용에 덮어쓰세요 ---
+paginate: 15  # 한 페이지에 보여줄 글 개수
+paginate_path: "/archive/page:num/" # 페이지 주소 형식 (예: /archive/page2/)
+
+plugins:
+  - jekyll-paginate
