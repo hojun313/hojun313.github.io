@@ -1,9 +1,22 @@
+/* --- 기본 스타일 (모든 페이지 공통) --- */
 body, html {
-    margin: 0; padding: 0; width: 100%; height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     font-family: 'Inter', sans-serif;
-    background-color: #121212; color: #E0E0E0;
-    display: flex; justify-content: center; align-items: center; text-align: center;
+    background-color: #121212;
+    color: #E0E0E0;
 }
+
+/* --- 허브 페이지 전용 가운데 정렬 스타일 --- */
+body.page-hub {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .hub-container { max-width: 600px; padding: 40px; }
 .hub-header h1 { font-size: 3rem; margin-bottom: 0.5rem; color: #FFFFFF; }
 .hub-header p { font-size: 1.2rem; color: #A0A0A0; margin-bottom: 2rem; }
