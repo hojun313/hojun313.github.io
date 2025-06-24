@@ -91,3 +91,54 @@ body.page-hub {
   background-color: transparent;
   color: #555;
 }
+
+
+/* assets/css/style.css 파일 맨 아래에 추가 */
+
+/* 개별 포스트 스타일 */
+.post-header {
+  border-bottom: 1px solid #444;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.post-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.post-meta {
+  color: #aaa;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.post-meta .meta-divider {
+  margin: 0 0.5em;
+}
+.post-category {
+  font-weight: bold;
+}
+.post-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+.post-content h2 {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+}
+.post-tags .tag {
+  display: inline-block;
+  background-color: #333;
+  color: #BB86FC;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+  font-size: 0.85rem;
+}
+.back-to-list {
+  margin-top: 3rem;
+}
