@@ -142,3 +142,50 @@ body.page-hub {
 .back-to-list {
   margin-top: 3rem;
 }
+
+/* 프로젝트 카드 스타일 */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.project-card {
+    background: #23232b;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+    padding: 28px 20px 20px 20px;
+    width: 260px;
+    transition: transform 0.15s, box-shadow 0.15s;
+    text-align: left;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(187,134,252,0.18);
+    border-color: #BB86FC;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-card h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #BB86FC;
+}
+
+.project-card p {
+    margin: 0;
+    color: #bdbdbd;
+    font-size: 1em;
+}
