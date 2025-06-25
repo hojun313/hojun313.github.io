@@ -189,3 +189,43 @@ body.page-hub {
     color: #bdbdbd;
     font-size: 1em;
 }
+
+/* 프로젝트 페이지 헤더 스타일 */
+.projects-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.projects-header h1 {
+    font-size: 2.7rem;
+    color: #BB86FC;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+.projects-header p {
+    font-size: 1.15rem;
+    color: #bdbdbd;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 프로젝트 페이지 네비게이션(메인으로 돌아가기) 스타일 */
+.projects-nav {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.projects-nav a {
+    color: #BB86FC;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 24px;
+    border: 1px solid #BB86FC;
+    border-radius: 6px;
+    background: #23232b;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
+}
+.projects-nav a:hover {
+    background: #BB86FC;
+    color: #23232b;
+}
