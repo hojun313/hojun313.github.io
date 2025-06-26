@@ -229,3 +229,33 @@ body.page-hub {
     background: #BB86FC;
     color: #23232b;
 }
+
+/* 추가된 클래스 스타일 */
+.projects-title {
+    font-size: 2.7rem;
+    color: #BB86FC;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+.projects-desc {
+    font-size: 1.15rem;
+    color: #bdbdbd;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.projects-back {
+    color: #BB86FC;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 24px;
+    border: 1px solid #BB86FC;
+    border-radius: 6px;
+    background: #23232b;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
+}
+.projects-back:hover {
+    background: #BB86FC;
+    color: #23232b;
+}
