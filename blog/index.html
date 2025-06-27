@@ -10,12 +10,10 @@ title: 블로그
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>블로그</title>
     
-    <!-- Google Fonts 'Inter' 폰트 불러오기 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 
-    <!-- CSS 파일 연결 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,34 +27,13 @@ title: 블로그
         {% assign post_date = post.date | date: "%Y-%m-%d" %}
         {% if post_date >= threshold_date %}
           <li class="blog-post-item">
-            <!-- 카드 전체를 클릭 가능하도록 a 태그가 모든 요소를 감쌉니다. -->
-            <a href="{{ site.baseurl }}{{ post.url }}">
-              
-              <!-- 카드 헤더: 카테고리와 날짜 -->
-              <div class="post-card-header">
-                {% if post.category %}
-                  <span class="post-category">{{ post.category }}</span>
-                {% endif %}
-                <span class="blog-post-date">{{ post_date }}</span>
-              </div>
-              
-              <!-- 포스트 제목 -->
+            <a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration: none; display: block;">
+              <span class="blog-post-date">{{ post_date }}</span>
               <h2 class="blog-post-title">{{ post.title }}</h2>
-              
-              <!-- 포스트 요약 -->
               {% if post.summary %}
                 <p class="blog-post-summary">{{ post.summary }}</p>
               {% elsif post.excerpt %}
                 <p class="blog-post-summary">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-              {% endif %}
-              
-              <!-- 태그 목록 (최대 3개까지 표시) -->
-              {% if post.tags.size > 0 %}
-              <div class="post-tags-container">
-                {% for tag in post.tags limit:3 %}
-                  <span class="post-tag">{{ tag }}</span>
-                {% endfor %}
-              </div>
               {% endif %}
             </a>
           </li>
