@@ -6,12 +6,12 @@ title: 블로그
 <h1>블로그 글 목록</h1>
 <ul>
   {% for post in site.posts %}
-    {% unless post.categories contains "archive" %}
+    {% if post.date >= '2025-06-01' %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
         <span>{{ post.date | date: "%Y-%m-%d" }}</span>
         <p>{{ post.summary }}</p>
       </li>
-    {% endunless %}
+    {% endif %}
   {% endfor %}
 </ul>
