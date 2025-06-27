@@ -141,7 +141,6 @@ body.page-hub {
 }
 
 /* 프로젝트 카드 스타일 */
-
 .project-card {
     background: #23232b;
     border-radius: 14px;
@@ -252,12 +251,12 @@ body.page-hub {
     margin-bottom: 2rem; /* 리스트 하단 여백 */
 }
 
-/* 블로그 글 목록 전용 스타일 */
+/* --- [수정됨] 블로그 글 목록 전용 스타일 --- */
 .blog-list-container {
   max-width: 700px;
-  margin: 48px auto 0 auto;
+  margin: 48px auto; /* 위아래 여백 추가 */
   padding: 32px 24px 40px 24px;
-  background: #181824;
+  background: #1e1e1e; 
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 }
@@ -265,7 +264,7 @@ body.page-hub {
 .blog-list-title {
   font-size: 2.3rem;
   font-weight: 800;
-  color: #BB86FC;
+  color: #FFFFFF; /* 제목 색상 강조 */
   margin-bottom: 2.2rem;
   text-align: center;
   letter-spacing: -1px;
@@ -278,49 +277,52 @@ body.page-hub {
 }
 
 .blog-post-item {
-  background: #23233a;
-  border-radius: 10px;
-  margin-bottom: 1.5rem;
-  padding: 22px 20px 18px 20px;
-  box-shadow: 0 2px 10px rgba(187,134,252,0.07);
-  transition: transform 0.13s, box-shadow 0.13s, border 0.13s;
-  border: 1.5px solid #23233a;
+  background: #2a2a32; 
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  padding: 22px 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  border: 1.5px solid transparent; /* 테두리 영역 확보 */
   position: relative;
 }
 .blog-post-item:hover {
-  transform: translateY(-4px) scale(1.015);
-  box-shadow: 0 8px 28px rgba(187,134,252,0.13);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 28px rgba(187,134,252,0.15);
   border-color: #BB86FC;
 }
 
-.blog-post-title {
+/* HTML 구조 변경에 따라 h2 태그로 선택자 수정 */
+.blog-post-item h2.blog-post-title {
   font-size: 1.35rem;
   font-weight: 700;
   color: #BB86FC;
-  margin: 0 0 0.3rem 0;
+  margin: 0 0 0.5rem 0; 
   text-decoration: none;
   transition: color 0.2s;
 }
-.blog-post-title:hover {
-  color: #fff;
+
+.blog-post-item:hover h2.blog-post-title {
+  color: #FFFFFF;
   text-decoration: underline;
 }
 
 .blog-post-date {
   color: #A0A0A0;
-  font-size: 0.98rem;
+  font-size: 0.9rem; 
   margin-bottom: 0.7rem;
   display: block;
 }
 
-.blog-post-summary {
+/* HTML 구조 변경에 따라 p 태그로 선택자 수정 */
+.blog-post-item p.blog-post-summary {
   color: #d0c9e6;
   font-size: 1.05rem;
-  margin-top: 0.5rem;
-  line-height: 1.7;
+  margin: 0; 
+  line-height: 1.6;
 }
 
-/* 반응형 디자인 */
+/* --- 반응형 디자인 --- */
 @media (max-width: 768px) {
     .project-card {
         width: 100%; /* 작은 화면에서 카드를 전체 너비로 */
@@ -336,13 +338,21 @@ body.page-hub {
 }
 
 @media (max-width: 600px) {
+  /* 블로그 목록 반응형 스타일 */
   .blog-list-container {
-    padding: 12px 4vw 24px 4vw;
+    padding: 24px 16px;
+    margin: 24px auto;
   }
   .blog-list-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .blog-post-item {
-    padding: 14px 8px 12px 12px;
+    padding: 18px 20px;
+  }
+  .blog-post-item h2.blog-post-title {
+    font-size: 1.2rem;
+  }
+  .blog-post-item p.blog-post-summary {
+    font-size: 1rem;
   }
 }
