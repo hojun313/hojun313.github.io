@@ -6,8 +6,9 @@ title: 블로그
 <h1>블로그 글 목록</h1>
 <ul>
   {% for post in site.posts %}
-    {% assign post_year = post.title | slice: 0, 4 | plus: 0 %}
-    {% assign post_month = post.title | slice: 5, 2 | plus: 0 %}
+    {% assign post_year = post.date | date: "%Y" | plus: 0 %}
+    {% assign post_month = post.date | date: "%m" | plus: 0 %}
+
     {% if post_year > 2025 or (post_year == 2025 and post_month >= 6) %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
