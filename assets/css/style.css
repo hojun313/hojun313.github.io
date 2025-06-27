@@ -252,6 +252,74 @@ body.page-hub {
     margin-bottom: 2rem; /* 리스트 하단 여백 */
 }
 
+/* 블로그 글 목록 전용 스타일 */
+.blog-list-container {
+  max-width: 700px;
+  margin: 48px auto 0 auto;
+  padding: 32px 24px 40px 24px;
+  background: #181824;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+.blog-list-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #BB86FC;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.blog-post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-post-item {
+  background: #23233a;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  padding: 22px 20px 18px 20px;
+  box-shadow: 0 2px 10px rgba(187,134,252,0.07);
+  transition: transform 0.13s, box-shadow 0.13s, border 0.13s;
+  border: 1.5px solid #23233a;
+  position: relative;
+}
+.blog-post-item:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: 0 8px 28px rgba(187,134,252,0.13);
+  border-color: #BB86FC;
+}
+
+.blog-post-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #BB86FC;
+  margin: 0 0 0.3rem 0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.blog-post-title:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.blog-post-date {
+  color: #A0A0A0;
+  font-size: 0.98rem;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+.blog-post-summary {
+  color: #d0c9e6;
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+  line-height: 1.7;
+}
+
 /* 반응형 디자인 */
 @media (max-width: 768px) {
     .project-card {
@@ -265,4 +333,16 @@ body.page-hub {
     .category-title {
         font-size: 1.8rem;
     }
+}
+
+@media (max-width: 600px) {
+  .blog-list-container {
+    padding: 12px 4vw 24px 4vw;
+  }
+  .blog-list-title {
+    font-size: 1.5rem;
+  }
+  .blog-post-item {
+    padding: 14px 8px 12px 12px;
+  }
 }

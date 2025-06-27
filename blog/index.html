@@ -3,23 +3,23 @@ layout: default
 title: 블로그
 ---
 
-<h1>블로그 글 목록</h1>
-<ul>
-  {% assign threshold_date = "2025-06-01" %}
-
-  {% for post in site.posts %}
-    {% assign post_date = post.date | date: "%Y-%m-%d" %}
-
-    {% if post_date >= threshold_date %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        <span>{{ post_date }}</span>
-        {% if post.summary %}
-          <p>{{ post.summary }}</p>
-        {% elsif post.excerpt %}
-          <p>{{ post.excerpt }}</p>
-        {% endif %}
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+<div class="blog-list-container">
+  <h1 class="blog-list-title">블로그 글 목록</h1>
+  <ul class="blog-post-list">
+    {% assign threshold_date = "2025-06-01" %}
+    {% for post in site.posts %}
+      {% assign post_date = post.date | date: "%Y-%m-%d" %}
+      {% if post_date >= threshold_date %}
+        <li class="blog-post-item">
+          <span class="blog-post-date">{{ post_date }}</span>
+          <a class="blog-post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          {% if post.summary %}
+            <div class="blog-post-summary">{{ post.summary }}</div>
+          {% elsif post.excerpt %}
+            <div class="blog-post-summary">{{ post.excerpt }}</div>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
