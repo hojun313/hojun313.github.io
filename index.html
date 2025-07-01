@@ -18,11 +18,14 @@
             <p>A central place for my digital world.</p>
         </header>
         <div class="hub-nav">
+            {% assign threshold_date = "2025-06-01" %}
             <div class="hub-section">
                 <h2><a href="/blog/">Blog</a></h2>
                 <ul class="hub-post-list">
                     {% for post in site.categories.Blog limit:2 %}
-                    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span></li>
+                        {% if post.date > threshold_date %}
+                        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span></li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </div>
@@ -30,17 +33,14 @@
                 <h2><a href="/diary/">Diary</a></h2>
                 <ul class="hub-post-list">
                     {% for post in site.categories.Diary limit:2 %}
-                    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span></li>
+                        {% if post.date > threshold_date %}
+                        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span></li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </div>
             <div class="hub-section">
                 <h2><a href="/projects/">Projects</a></h2>
-                <ul class="hub-post-list">
-                    {% for post in site.categories.Ludens limit:2 %}
-                    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span></li>
-                    {% endfor %}
-                </ul>
             </div>
             <div class="hub-section">
                 <h2><a href="/about/">About</a></h2>
