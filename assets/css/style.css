@@ -20,13 +20,81 @@ body.page-hub {
 .hub-container { max-width: 600px; padding: 40px; }
 .hub-header h1 { font-size: 3rem; margin-bottom: 0.5rem; color: #FFFFFF; }
 .hub-header p { font-size: 1.2rem; color: #A0A0A0; margin-bottom: 2rem; }
-.hub-nav { display: flex; justify-content: center; gap: 20px; }
-.hub-nav a {
-    color: #BB86FC; text-decoration: none; font-size: 1.2rem;
-    padding: 10px 20px; border: 1px solid #BB86FC; border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+
+/* --- Hub Page - New Sections --- */
+.hub-nav {
+    display: flex;
+    flex-direction: column; /* Change to column for vertical layout */
+    gap: 30px; /* Increase gap for better separation */
+    width: 100%;
 }
-.hub-nav a:hover { background-color: #BB86FC; color: #121212; }
+
+.hub-section {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+}
+
+.hub-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.hub-section h2 a {
+    color: #BB86FC;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.hub-section h2 a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.hub-post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hub-post-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.hub-post-list li:last-child {
+    border-bottom: none;
+}
+
+.hub-post-list a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.hub-post-list a:hover {
+    color: #BB86FC;
+}
+
+.hub-post-list .post-date {
+    color: #A0A0A0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
+/* --- Hub Page - About/Archive Links --- */
+.hub-section.link-section h2 {
+    margin-bottom: 0;
+}
+
 .content-container { max-width: 800px; margin: 40px auto; padding: 20px; background-color: #1e1e1e; border-radius: 8px; text-align: left; }
 .post-list { list-style: none; padding: 0; }
 .post-list li { margin-bottom: 1rem; font-size: 1.1rem; }
@@ -355,4 +423,21 @@ body.page-hub {
   .blog-post-item p.blog-post-summary {
     font-size: 1rem;
   }
+
+  /* --- Hub Page - Media Queries --- */
+    .hub-container {
+        padding: 20px;
+    }
+    .hub-header h1 {
+        font-size: 2.5rem;
+    }
+    .hub-header p {
+        font-size: 1.1rem;
+    }
+    .hub-section h2 {
+        font-size: 1.3rem;
+    }
+    .hub-post-list a {
+        font-size: 1rem;
+    }
 }
