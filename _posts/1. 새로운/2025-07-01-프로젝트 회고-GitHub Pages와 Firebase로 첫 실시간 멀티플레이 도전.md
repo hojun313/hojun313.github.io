@@ -1,15 +1,9 @@
 ---
-title: 프로젝트 회고-GitHub Pages와 Firebase로 첫 실시간 멀티플레이 도전
+title: "프로젝트 회고-GitHub Pages와 Firebase로 첫 실시간 멀티플레이 도전"
 date: 2025-07-01
-categories:
-  - Diary
-  - GameDevLog
-tags:
-  - Unity
-  - 벽돌깨기
-  - 개발일지
-  - WebGL
-summary: 패들 이동 제한, 공 중력 추가, 다단계 스테이지 관리, 레벨 표시, 게임 재시작 로직 및 버튼 클릭 문제 등 핵심 기능 개선과 버그 수정 과정을 기록한 개발 일지.
+categories: [Diary, GameDevLog]
+tags: [GitHub Pages, Firebase, 멀티플레이, 실시간, 웹게임, 가위바위보, BaaS, 개발회고]
+summary: "GitHub Pages와 Firebase Realtime Database를 활용해 서버 없이 실시간 멀티플레이 가위바위보 게임을 구현한 경험을 기록한 프로젝트 회고. 정적 웹 호스팅 환경에서 실시간 상호작용을 가능하게 한 핵심 아이디어, 구현 과정, 문제 해결 경험, 그리고 BaaS의 장점을 정리함."
 ---
   "GitHub Pages에 멀티플레이 게임을 올릴 수 있을까?"
 
