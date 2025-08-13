@@ -1,0 +1,122 @@
+---
+layout: default
+title: "Tags"
+---
+
+<style>
+  .tag-cloud {
+    padding: 20px 0;
+    text-align: center;
+  }
+  .tag-cloud a {
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    transition: all 0.2s ease-in-out;
+  }
+  .tag-cloud a:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.1);
+  }
+  .tag-active {
+    background-color: #007bff !important;
+    color: white !important;
+  }
+  #tag-name {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+  .post-list-by-tag {
+    list-style: none;
+    padding: 0;
+  }
+  .post-list-by-tag li {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .post-list-by-tag a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+  }
+  .post-list-by-tag .post-date {
+    display: block;
+    color: #888;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+</style>
+
+<div class="tag-cloud">
+  <h2>Tags</h2>
+  {% assign all_tags = site.tags | sort %}
+  {% for tag in all_tags %}
+    <a href="#{{ tag[0] | url_encode }}">{{ tag[0] }} ({{ tag[1].size }})</a>
+  {% endfor %}
+</div>
+
+<h2 id="tag-name"></h2>
+<ul id="post-list" class="post-list-by-tag">
+</ul>
+
+<script>
+  const posts = [
+    {% for post in site.posts %}
+    {
+      "title": {{ post.title | jsonify }},
+      "url": "{{ site.baseurl }}{{ post.url }}",
+      "date": "{{ post.date | date: '%Y-%m-%d' }}",
+      "tags": {{ post.tags | jsonify }}
+    },
+    {% endfor %}
+  ];
+
+  function updatePostList() {
+    const hash = window.location.hash.substring(1);
+    const tagName = decodeURIComponent(hash || '').replace(/\+/g, ' ');
+    const postList = document.getElementById('post-list');
+    const tagNameHeader = document.getElementById('tag-name');
+    
+    document.querySelectorAll('.tag-cloud a').forEach(tagLink => {
+      if (decodeURIComponent(tagLink.hash.substring(1)) === tagName) {
+        tagLink.classList.add('tag-active');
+      } else {
+        tagLink.classList.remove('tag-active');
+      }
+    });
+
+    if (!tagName) {
+      tagNameHeader.innerText = '모든 태그';
+      postList.innerHTML = '<li>위의 태그를 선택하여 글을 필터링하세요.</li>';
+      return;
+    }
+
+    tagNameHeader.innerText = `태그: #${tagName}`;
+    const filteredPosts = posts.filter(post => post.tags.includes(tagName));
+    
+    let html = '';
+    if (filteredPosts.length > 0) {
+      filteredPosts.forEach(post => {
+        html += `
+          <li>
+            <a href="${post.url}">${post.title}</a>
+            <span class="post-date">${post.date}</span>
+          </li>
+        `;
+      });
+    } else {
+      html = '<li>이 태그에 해당하는 글이 없습니다.</li>';
+    }
+    postList.innerHTML = html;
+  }
+
+  window.addEventListener('hashchange', updatePostList);
+  document.addEventListener('DOMContentLoaded', updatePostList);
+</script>
