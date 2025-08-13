@@ -1,6 +1,7 @@
 ---
 title: "[HabitStack 개발 일지] 2025년 8월 8일 - 시간 제한 기능 구현 및 GitHub Pages 배포 완료"
 date: 2025-08-08
+categories: [Diary, GameDevLog]
 tags: [React, TypeScript, Vite, Bootstrap, HabitStack, 웹개발, 시간제한, 배포, GitHub Pages]
 ---
 
