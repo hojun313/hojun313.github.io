@@ -457,24 +457,3 @@ body.page-hub {
     font-size: 1.2rem; /* Smaller font size for the sub-links */
     margin: 0;
 }
-
-/* --- Hub Page Project Card Overrides --- */
-.hub-section .projects-list {
-    gap: 15px;
-}
-
-.hub-section .project-card {
-    width: auto; /* Override fixed width */
-    flex: 1 1 100px; /* Allow cards to grow and shrink */
-    padding: 15px;
-    min-width: 100px;
-}
-
-.hub-section .project-card h2 {
-    font-size: 1.1em;
-}
-
-.hub-section .project-card p {
-    font-size: 0.9em;
-    line-height: 1.4;
-}
