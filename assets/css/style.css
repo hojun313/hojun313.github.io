@@ -460,22 +460,21 @@ body.page-hub {
 
 /* --- Hub Page Project Card Overrides --- */
 .hub-section .projects-list {
-    gap: 10px; /* Reduced gap */
+    gap: 15px;
 }
 
 .hub-section .project-card {
     width: auto; /* Override fixed width */
-    flex: 1 1 0; /* Allow cards to shrink as much as needed */
-    padding: 12px;
-    min-width: 0; /* Remove minimum width constraint */
+    flex: 1 1 100px; /* Allow cards to grow and shrink */
+    padding: 15px;
+    min-width: 100px;
 }
 
 .hub-section .project-card h2 {
-    font-size: 1.05em;
-    margin-bottom: 8px;
+    font-size: 1.1em;
 }
 
 .hub-section .project-card p {
-    font-size: 0.85em;
-    line-height: 1.3;
+    font-size: 0.9em;
+    line-height: 1.4;
 }
