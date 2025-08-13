@@ -37,11 +37,49 @@
             </div>
             <div class="hub-section">
                 <h2><a href="/projects/">Projects</a></h2>
-                <ul class="hub-post-list">
-                    {% for post in site.categories.Ludens limit:2 %}
-                    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span></li>
-                    {% endfor %}
+                <ul id="random-projects-list" class="hub-post-list">
+                    <!-- A brief message that will be replaced by JavaScript -->
+                    <li style="text-align: center; color: #A0A0A0;">Loading random projects...</li>
                 </ul>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const allProjects = [
+                            {% for category in site.data.projects %}
+                                {% for project in category.items %}
+                                    {
+                                        "title": {{ project.title | jsonify }},
+                                        "url": "{{ project.url }}",
+                                        "description": {{ project.description | jsonify }}
+                                    },
+                                {% endfor %}
+                            {% endfor %}
+                        ];
+
+                        // Shuffle the array
+                        for (let i = allProjects.length - 1; i > 0; i--) {
+                            const j = Math.floor(Math.random() * (i + 1));
+                            [allProjects[i], allProjects[j]] = [allProjects[j], allProjects[i]];
+                        }
+
+                        const randomProjects = allProjects.slice(0, 2); // Get the first 2 random projects
+                        const listElement = document.getElementById('random-projects-list');
+                        let html = '';
+
+                        if (randomProjects.length > 0) {
+                            randomProjects.forEach(project => {
+                                html += `
+                                    <li>
+                                        <a href="${project.url}">${project.title}</a>
+                                        <span class="post-date">${project.description}</span>
+                                    </li>
+                                `;
+                            });
+                        } else {
+                            html = '<li>No projects to display.</li>';
+                        }
+                        listElement.innerHTML = html;
+                    });
+                </script>
             </div>
             <div class="hub-bottom-row">
                 <div class="hub-section hub-section-small">

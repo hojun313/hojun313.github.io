@@ -14,95 +14,21 @@
             <p class="projects-desc">웹 기반 프로젝트 모음입니다. 각 프로젝트를 클릭해보세요!</p>
         </header>
 
+        {% for category in site.data.projects %}
         <section class="project-category">
-            <h2 class="category-title">Services</h2>
+            <h2 class="category-title">{{ category.category }}</h2>
             <ul class="projects-list">
+                {% for project in category.items %}
                 <li class="project-card">
-                    <a href="https://hojun313.github.io/liveLearnKR/">
-                        <h2>liveLearnKR</h2>
-                        <p>실생활 한국어 학습 서비스</p>
+                    <a href="{{ project.url }}">
+                        <h2>{{ project.title }}</h2>
+                        <p>{{ project.description }}</p>
                     </a>
                 </li>
-                <li class="project-card">
-                    <a href="https://hojun313.github.io/wishlist-app/">
-                        <h2>Interest Profiler</h2>
-                        <p>관심사, 선물 위시리스트 서비스</p>
-                    </a>
-                </li>
-                <li class="project-card">
-                    <a href="https://hojun313.github.io/RecycleQ/">
-                        <h2>RecycleQ</h2>
-                        <p>재활용 분리수거 퀴즈 앱</p>
-                    </a>
-                </li>
-                <li class="project-card">
-                    <a href="https://hojun313.github.io/Vintage-shopping-list/">
-                        <h2>있고 없고 (Itgo Eopgo)</h2>
-                        <p>미니멀 쇼핑 리스트 웹서비스</p>
-                    </a>
-                </li>
-                <li class="project-card">
-                    <a href="https://hojun313.github.io/HabitStack/">
-                        <h2>HabitStack</h2>
-                        <p>스택형 습관 관리 서비스</p>
-                    </a>
-                </li>
-                <li class="project-card">
-                    <a href="https://hojun313.github.io/Fridge-Up/">
-                        <h2>Fridge Up</h2>
-                        <p>냉장고 재료 관리 서비스</p>
-                    </a>
-                </li>
+                {% endfor %}
             </ul>
         </section>
-
-        <section class="project-category">
-            <h2 class="category-title">Games</h2>
-            <ul class="projects-list">
-                <li class="project-card">
-                    <a href="https://hojun313.github.io/glatic_shooter/">
-                        <h2>glatic_shooter</h2>
-                        <p>간단한 슈팅 게임 프로젝트</p>
-                    </a>
-                </li>
-                <li class="project-card">
-                    <a href="https://hojun313.github.io/DPHG/">
-                        <h2>DPHG</h2>
-                        <p>고전 게임 시리즈 1: 똥 피하기</p>
-                    </a>
-                </li>
-                <li class="project-card">
-                    <a href="https://hojun313.github.io/BDGG/">
-                        <h2>BDGG</h2>
-                        <p>고전 게임 시리즈 2: 벽돌 깨기</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <section class="project-category">
-            <h2 class="category-title">Tests (Toy, For Fun)</h2>
-            <ul class="projects-list">
-                <li class="project-card">
-                    <a href="https://hojun313.github.io/RIASEC-Test/">
-                        <h2>RIASEC Test</h2>
-                        <p>RIASEC 테스트</p>
-                    </a>
-                </li>
-                <li class="project-card">
-                    <a href="https://hojun313.github.io/Food-Test/">
-                        <h2>Food Test</h2>
-                        <p>음식 취향 테스트</p>
-                    </a>
-                </li>
-                <li class="project-card">
-                    <a href="https://hojun313.github.io/MBTI-Test/">
-                        <h2>MBTI Test</h2>
-                        <p>MBTI 성격 유형 테스트</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
+        {% endfor %}
 
         
         <nav class="projects-nav">
