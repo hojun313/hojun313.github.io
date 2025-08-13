@@ -4,6 +4,11 @@ title: "Tags"
 ---
 
 <style>
+  body {
+    /* Assuming a dark theme is desired. If the main site isn't dark, this might need adjustment */
+    background-color: #1a1a1d;
+    color: #f0f0f0;
+  }
   .tag-cloud {
     padding: 20px 0;
     text-align: center;
@@ -12,26 +17,22 @@ title: "Tags"
     display: inline-block;
     padding: 5px 12px;
     margin: 5px;
-    background-color: #f0f0f0;
+    background-color: #333;
     border-radius: 15px;
     text-decoration: none;
-    color: #333;
+    color: #f0f0f0;
     font-size: 1em;
     transition: all 0.2s ease-in-out;
   }
-  .tag-cloud a:hover {
-    background-color: #007bff;
-    color: white;
+  .tag-cloud a:hover, .tag-active {
+    background-color: #bb86fc;
+    color: #1a1a1d;
     transform: scale(1.1);
-  }
-  .tag-active {
-    background-color: #007bff !important;
-    color: white !important;
   }
   #tag-name {
     margin-top: 30px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #444;
   }
   .post-list-by-tag {
     list-style: none;
@@ -39,20 +40,28 @@ title: "Tags"
   }
   .post-list-by-tag li {
     padding: 15px 0;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #444;
   }
   .post-list-by-tag a {
     text-decoration: none;
-    color: #333;
+    color: #f0f0f0;
     font-size: 1.2em;
+    transition: color 0.2s ease-in-out;
+  }
+  .post-list-by-tag a:hover {
+    color: #bb86fc;
   }
   .post-list-by-tag .post-date {
     display: block;
-    color: #888;
+    color: #aaa;
     font-size: 0.9em;
     margin-top: 5px;
   }
 </style>
+
+<h2 id="tag-name"></h2>
+<ul id="post-list" class="post-list-by-tag">
+</ul>
 
 <div class="tag-cloud">
   <h2>Tags</h2>
@@ -62,9 +71,6 @@ title: "Tags"
   {% endfor %}
 </div>
 
-<h2 id="tag-name"></h2>
-<ul id="post-list" class="post-list-by-tag">
-</ul>
 
 <script>
   const posts = [
@@ -94,7 +100,7 @@ title: "Tags"
 
     if (!tagName) {
       tagNameHeader.innerText = '모든 태그';
-      postList.innerHTML = '<li>위의 태그를 선택하여 글을 필터링하세요.</li>';
+      postList.innerHTML = '<li>아래의 태그를 선택하여 글을 필터링하세요.</li>';
       return;
     }
 
