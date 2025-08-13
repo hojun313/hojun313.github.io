@@ -36,8 +36,11 @@
                 </ul>
             </div>
             <div class="hub-section">
-                <h2><a href="/projects/">Projects</a></h2>
-                <div id="random-projects-container" >
+                <div class="hub-section-header">
+                    <h2><a href="/projects/">Projects</a></h2>
+                    <button id="refresh-projects-btn" class="refresh-btn" title="Reload Projects">↻</button>
+                </div>
+                <div id="random-projects-container">
                     <!-- JS will inject two project items here -->
                 </div>
                 <script>
@@ -53,35 +56,44 @@
                                 {% endfor %}
                             {% endfor %}
                         ];
-
-                        // Shuffle the array
-                        for (let i = allProjects.length - 1; i > 0; i--) {
-                            const j = Math.floor(Math.random() * (i + 1));
-                            [allProjects[i], allProjects[j]] = [allProjects[j], allProjects[i]];
-                        }
-
-                        const randomProjects = allProjects.slice(0, 2); // Get 2 projects
                         const container = document.getElementById('random-projects-container');
-                        
-                        // Apply container styles directly with JS
-                        container.style.display = 'flex';
-                        container.style.gap = '20px';
-                        container.style.marginTop = '15px';
+                        const refreshButton = document.getElementById('refresh-projects-btn');
 
-                        let html = '';
-                        if (randomProjects.length > 0) {
-                            randomProjects.forEach(project => {
-                                html += `
-                                    <div class="hub-project-item" style="flex: 1; background-color: #2a2a32; padding: 15px; border-radius: 8px; border: 1px solid #333; transition: all 0.2s ease-in-out;">
-                                        <a href="${project.url}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-                                            <h3 class="hub-project-title" style="margin: 0 0 8px 0; font-size: 1.2em; color: #BB86FC;">${project.title}</h3>
-                                            <p class="hub-project-description" style="margin: 0; font-size: 0.9em; color: #A0A0A0; line-height: 1.4;">${project.description}</p>
-                                        </a>
-                                    </div>
-                                `;
-                            });
+                        function renderRandomProjects() {
+                            // Shuffle the array
+                            for (let i = allProjects.length - 1; i > 0; i--) {
+                                const j = Math.floor(Math.random() * (i + 1));
+                                [allProjects[i], allProjects[j]] = [allProjects[j], allProjects[i]];
+                            }
+
+                            const randomProjects = allProjects.slice(0, 2); // Get 2 projects
+                            
+                            // Apply container styles directly with JS
+                            container.style.display = 'flex';
+                            container.style.gap = '20px';
+                            container.style.marginTop = '15px';
+
+                            let html = '';
+                            if (randomProjects.length > 0) {
+                                randomProjects.forEach(project => {
+                                    html += `
+                                        <div class="hub-project-item" style="flex: 1; background-color: #2a2a32; padding: 15px; border-radius: 8px; border: 1px solid #333; transition: all 0.2s ease-in-out;">
+                                            <a href="${project.url}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                                                <h3 class="hub-project-title" style="margin: 0 0 8px 0; font-size: 1.2em; color: #BB86FC;">${project.title}</h3>
+                                                <p class="hub-project-description" style="margin: 0; font-size: 0.9em; color: #A0A0A0; line-height: 1.4;">${project.description}</p>
+                                            </a>
+                                        </div>
+                                    `;
+                                });
+                            }
+                            container.innerHTML = html;
                         }
-                        container.innerHTML = html;
+
+                        // Initial render on page load
+                        renderRandomProjects();
+
+                        // Add event listener to the button
+                        refreshButton.addEventListener('click', renderRandomProjects);
                     });
                 </script>
             </div>
