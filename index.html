@@ -37,9 +37,8 @@
             </div>
             <div class="hub-section">
                 <h2><a href="/projects/">Projects</a></h2>
-                <ul id="random-projects-list" class="hub-post-list">
-                    <!-- A brief message that will be replaced by JavaScript -->
-                    <li style="text-align: center; color: #A0A0A0;">Loading random projects...</li>
+                <ul id="random-projects-list" class="projects-list" style="padding-top: 15px;">
+                    <!-- Random project cards will be injected here -->
                 </ul>
                 <script>
                     document.addEventListener('DOMContentLoaded', function() {
@@ -61,21 +60,24 @@
                             [allProjects[i], allProjects[j]] = [allProjects[j], allProjects[i]];
                         }
 
-                        const randomProjects = allProjects.slice(0, 2); // Get the first 2 random projects
+                        const randomProjects = allProjects.slice(0, 4); // Get the first 4 random projects
                         const listElement = document.getElementById('random-projects-list');
                         let html = '';
 
                         if (randomProjects.length > 0) {
                             randomProjects.forEach(project => {
+                                // Using the project-card structure from the projects page
                                 html += `
-                                    <li>
-                                        <a href="${project.url}">${project.title}</a>
-                                        <span class="post-date">${project.description}</span>
+                                    <li class="project-card">
+                                        <a href="${project.url}">
+                                            <h2>${project.title}</h2>
+                                            <p>${project.description}</p>
+                                        </a>
                                     </li>
                                 `;
                             });
                         } else {
-                            html = '<li>No projects to display.</li>';
+                            html = '<li style="color: #A0A0A0; width: 100%; text-align: center;">No projects to display.</li>';
                         }
                         listElement.innerHTML = html;
                     });
