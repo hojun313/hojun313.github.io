@@ -441,21 +441,3 @@ body.page-hub {
         font-size: 1rem;
     }
 }
-
-/* --- New Hub Bottom Row Styles --- */
-.hub-bottom-row {
-    display: flex;
-    gap: 20px; /* Adjust gap as needed */
-    width: 100%;
-}
-
-.hub-section-small {
-    flex: 1; /* Make all sections in the row have equal width */
-    text-align: center; /* Center the text */
-    padding: 20px; /* You can adjust padding */
-}
-
-.hub-section-small h2 {
-    font-size: 1.2rem; /* Smaller font size for the sub-links */
-    margin: 0;
-}
