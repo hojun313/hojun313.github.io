@@ -26,17 +26,28 @@ title: 블로그
       {% for post in site.posts %}
         {% assign post_date = post.date | date: "%Y-%m-%d" %}
         {% if post_date >= threshold_date %}
-          <li class="blog-post-item">
-            <a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration: none; display: block;">
-              <span class="blog-post-date">{{ post_date }}</span>
-              <h2 class="blog-post-title">{{ post.title }}</h2>
-              {% if post.summary %}
-                <p class="blog-post-summary">{{ post.summary }}</p>
-              {% elsif post.excerpt %}
-                <p class="blog-post-summary">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-              {% endif %}
-            </a>
-          </li>
+
+          {% assign is_diary_post = false %}
+          {% for category in post.categories %}
+            {% if category == 'Diary' %}
+              {% assign is_diary_post = true %}
+            {% endif %}
+          {% endfor %}
+
+          {% if is_diary_post == false %}
+            <li class="blog-post-item">
+              <a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration: none; display: block;">
+                <span class="blog-post-date">{{ post_date }}</span>
+                <h2 class="blog-post-title">{{ post.title }}</h2>
+                {% if post.summary %}
+                  <p class="blog-post-summary">{{ post.summary }}</p>
+                {% elsif post.excerpt %}
+                  <p class="blog-post-summary">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                {% endif %}
+              </a>
+            </li>
+          {% endif %}
+
         {% endif %}
       {% endfor %}
     </ul>
