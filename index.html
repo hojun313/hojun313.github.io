@@ -37,10 +37,9 @@
             </div>
             <div class="hub-section">
                 <h2><a href="/projects/">Projects</a></h2>
-                <ul id="random-projects-list" class="hub-post-list">
-                    <!-- A brief message that will be replaced by JavaScript -->
-                    <li style="text-align: center; color: #A0A0A0;">Loading random projects...</li>
-                </ul>
+                <div id="random-projects-container" class="hub-project-row">
+                    <!-- JS will inject two project items here -->
+                </div>
                 <script>
                     document.addEventListener('DOMContentLoaded', function() {
                         const allProjects = [
@@ -61,23 +60,23 @@
                             [allProjects[i], allProjects[j]] = [allProjects[j], allProjects[i]];
                         }
 
-                        const randomProjects = allProjects.slice(0, 2); // Get the first 2 random projects
-                        const listElement = document.getElementById('random-projects-list');
+                        const randomProjects = allProjects.slice(0, 2); // Get 2 projects
+                        const container = document.getElementById('random-projects-container');
                         let html = '';
 
                         if (randomProjects.length > 0) {
                             randomProjects.forEach(project => {
                                 html += `
-                                    <li>
-                                        <a href="${project.url}">${project.title}</a>
-                                        <span class="post-date">${project.description}</span>
-                                    </li>
+                                    <div class="hub-project-item">
+                                        <a href="${project.url}" target="_blank" rel="noopener noreferrer">
+                                            <h3 class="hub-project-title">${project.title}</h3>
+                                            <p class="hub-project-description">${project.description}</p>
+                                        </a>
+                                    </div>
                                 `;
                             });
-                        } else {
-                            html = '<li>No projects to display.</li>';
                         }
-                        listElement.innerHTML = html;
+                        container.innerHTML = html;
                     });
                 </script>
             </div>
