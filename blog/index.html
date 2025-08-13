@@ -22,8 +22,10 @@ title: 블로그
     <h1 class="blog-list-title">블로그 글 목록</h1>
     
     <ul class="blog-post-list">
-              {% if post_date >= threshold_date %}
-          {% unless post.categories contains 'Diary' %}
+      {% assign threshold_date = "2025-06-01" %}
+      {% for post in site.posts %}
+        {% assign post_date = post.date | date: "%Y-%m-%d" %}
+        {% if post_date >= threshold_date %}
           <li class="blog-post-item">
             <a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration: none; display: block;">
               <span class="blog-post-date">{{ post_date }}</span>
@@ -35,8 +37,8 @@ title: 블로그
               {% endif %}
             </a>
           </li>
-          {% endunless %}
         {% endif %}
+      {% endfor %}
     </ul>
   </div>
 
