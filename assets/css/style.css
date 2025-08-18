@@ -208,6 +208,13 @@ body.page-hub {
   margin-top: 3rem;
 }
 
+/* 프로젝트 페이지 스타일 */
+.projects-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
 /* 프로젝트 카드 스타일 */
 .project-card {
     background: #23232b;
