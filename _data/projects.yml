@@ -21,6 +21,9 @@
     - title: "CaffInMe"
       url: "https://hojun313.github.io/CaffInMe/"
       description: "체내 카페인 트래킹 서비스"
+    - title: "WAIA"
+      url: "https://hojun313.github.io/WAIA/"
+      description: "개인정보 처리방침 파악 서비스"
 
 - category: "Games"
   items:
