@@ -18,6 +18,9 @@
     - title: "Fridge Up"
       url: "https://hojun313.github.io/Fridge-Up/"
       description: "냉장고 재료 관리 서비스"
+    - title: "CaffInMe"
+      url: "https://hojun313.github.io/CaffInMe/"
+      description: "체내 카페인 트래킹 서비스"
 
 - category: "Games"
   items:
