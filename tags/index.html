@@ -121,18 +121,6 @@ title: "Tags"
   const postList = document.getElementById('post-list');
   const tagNameHeader = document.getElementById('tag-name');
 
-  // --- Tag Highlighting ---
-  function updateActiveTag() {
-    const currentHash = window.location.hash;
-    document.querySelectorAll('#tag-cloud-container a').forEach(tagLink => {
-      if (tagLink.hash === currentHash) {
-        tagLink.classList.add('tag-active');
-      } else {
-        tagLink.classList.remove('tag-active');
-      }
-    });
-  }
-
   // --- Tag Sorting and Rendering ---
   function renderTagCloud(tags) {
     tagCloudContainer.innerHTML = '<h2>Tags</h2>'; // Add title back
@@ -159,7 +147,7 @@ title: "Tags"
     sortAlphaButton.classList.remove('active');
   });
 
-  // --- Post Filtering by Tag ---
+  // --- Post Filtering by Tag (existing logic) ---
   function updatePostList() {
     const hash = window.location.hash.substring(1);
     const tagName = decodeURIComponent(hash || '').replace(/\+/g, ' ');
@@ -189,6 +177,18 @@ title: "Tags"
       html = '<li>이 태그에 해당하는 글이 없습니다.</li>';
     }
     postList.innerHTML = html;
+  }
+
+  function updateActiveTag() {
+    const hash = window.location.hash.substring(1);
+    const tagName = decodeURIComponent(hash || '').replace(/\+/g, ' ');
+    document.querySelectorAll('.tag-cloud a').forEach(tagLink => {
+      if (decodeURIComponent(tagLink.hash.substring(1)) === tagName) {
+        tagLink.classList.add('tag-active');
+      } else {
+        tagLink.classList.remove('tag-active');
+      }
+    });
   }
 
   // --- Initial Load ---
