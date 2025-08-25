@@ -8,25 +8,6 @@ title: "Tags"
     background-color: #121212;
     color: #E0E0E0;
   }
-  .tag-sort-options {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .tag-sort-options button {
-    background-color: #333;
-    color: #E0E0E0;
-    border: 1px solid #555;
-    padding: 8px 15px;
-    margin: 0 5px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-  }
-  .tag-sort-options button.active {
-    background-color: #BB86FC;
-    color: #121212;
-    border-color: #BB86FC;
-  }
   .tag-cloud {
     padding: 20px 0;
     text-align: center;
@@ -78,31 +59,19 @@ title: "Tags"
   }
 </style>
 
-<div class="tag-sort-options">
-  <button id="sort-alpha" class="active">가나다순</button>
-  <button id="sort-count">많은순</button>
-</div>
-
 <h2 id="tag-name"></h2>
 <ul id="post-list" class="post-list-by-tag">
 </ul>
 
-<div id="tag-cloud-container" class="tag-cloud">
-  <!-- Tags will be injected here by JavaScript -->
+<div class="tag-cloud">
+  <h2>Tags</h2>
+  {% assign all_tags = site.tags | sort %}
+  {% for tag in all_tags %}
+    <a href="#{{ tag[0] | url_encode }}">{{ tag[0] }} ({{ tag[1].size }})</a>
+  {% endfor %}
 </div>
 
 <script>
-  // Data loaded from Jekyll
-  const allTags = [
-      {% for tag in site.tags %}
-          {
-              "name": {{ tag[0] | jsonify }},
-              "size": {{ tag[1].size }},
-              "url_hash": "#{{ tag[0] | url_encode }}"
-          },
-      {% endfor %}
-  ];
-
   const posts = [
     {% for post in site.posts %}
     {
@@ -114,17 +83,12 @@ title: "Tags"
     {% endfor %}
   ];
 
-  // DOM Elements
-  const sortAlphaButton = document.getElementById('sort-alpha');
-  const sortCountButton = document.getElementById('sort-count');
-  const tagCloudContainer = document.getElementById('tag-cloud-container');
   const postList = document.getElementById('post-list');
   const tagNameHeader = document.getElementById('tag-name');
 
-  // --- Tag Highlighting ---
   function updateActiveTag() {
     const currentHash = window.location.hash;
-    document.querySelectorAll('#tag-cloud-container a').forEach(tagLink => {
+    document.querySelectorAll('.tag-cloud a').forEach(tagLink => {
       if (tagLink.hash === currentHash) {
         tagLink.classList.add('tag-active');
       } else {
@@ -133,33 +97,6 @@ title: "Tags"
     });
   }
 
-  // --- Tag Sorting and Rendering ---
-  function renderTagCloud(tags) {
-    tagCloudContainer.innerHTML = '<h2>Tags</h2>'; // Add title back
-    tags.forEach(tag => {
-      const tagLink = document.createElement('a');
-      tagLink.href = tag.url_hash;
-      tagLink.innerText = `${tag.name} (${tag.size})`;
-      tagCloudContainer.appendChild(tagLink);
-    });
-    updateActiveTag(); // Re-apply active class after re-rendering
-  }
-
-  sortAlphaButton.addEventListener('click', () => {
-    allTags.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
-    renderTagCloud(allTags);
-    sortAlphaButton.classList.add('active');
-    sortCountButton.classList.remove('active');
-  });
-
-  sortCountButton.addEventListener('click', () => {
-    allTags.sort((a, b) => b.size - a.size);
-    renderTagCloud(allTags);
-    sortCountButton.classList.add('active');
-    sortAlphaButton.classList.remove('active');
-  });
-
-  // --- Post Filtering by Tag ---
   function updatePostList() {
     const hash = window.location.hash.substring(1);
     const tagName = decodeURIComponent(hash || '').replace(/\+/g, ' ');
@@ -191,14 +128,9 @@ title: "Tags"
     postList.innerHTML = html;
   }
 
-  // --- Initial Load ---
   window.addEventListener('hashchange', updatePostList);
   document.addEventListener('DOMContentLoaded', () => {
-    // Initial sort and render
-    allTags.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
-    renderTagCloud(allTags);
-    // Initial post list render
     updatePostList();
+    updateActiveTag(); // Call it again to be sure
   });
-
 </script>
