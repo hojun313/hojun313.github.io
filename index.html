@@ -56,6 +56,52 @@
 
             <div class="hub-section">
                 <div class="hub-section-header" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2 style="margin: 0;"><a href="/archive/">Archive</a></h2>
+                    <button id="refresh-archive-btn" class="refresh-btn" title="Reload Archive">↻</button>
+                </div>
+                <ul id="random-archive-container" class="hub-post-list">
+                    <!-- JS will inject four random posts here -->
+                </ul>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const allPosts = [
+                            {% for post in site.posts %}
+                                {
+                                    "title": {{ post.title | jsonify }},
+                                    "url": "{{ post.url | relative_url }}",
+                                    "date": "{{ post.date | date: '%Y-%m-%d' }}"
+                                },
+                            {% endfor %}
+                        ];
+                        const container = document.getElementById('random-archive-container');
+                        const refreshButton = document.getElementById('refresh-archive-btn');
+
+                        function renderRandomPosts() {
+                            // Shuffle the array
+                            for (let i = allPosts.length - 1; i > 0; i--) {
+                                const j = Math.floor(Math.random() * (i + 1));
+                                [allPosts[i], allPosts[j]] = [allPosts[j], allPosts[i]];
+                            }
+
+                            const randomPosts = allPosts.slice(0, 4); // Get 4 posts
+                            
+                            let html = '';
+                            if (randomPosts.length > 0) {
+                                randomPosts.forEach(post => {
+                                    html += `<li><a href="${post.url}">${post.title}</a><span class="post-date">${post.date}</span></li>`;
+                                });
+                            }
+                            container.innerHTML = html;
+                        }
+
+                        renderRandomPosts();
+                        refreshButton.addEventListener('click', renderRandomPosts);
+                    });
+                </script>
+            </div>
+
+            <div class="hub-section">
+                <div class="hub-section-header" style="display: flex; justify-content: space-between; align-items: center;">
                     <h2 style="margin: 0;"><a href="/projects/">Projects</a></h2>
                     <button id="refresh-projects-btn" class="refresh-btn" title="Reload Projects">↻</button>
                 </div>
@@ -79,15 +125,13 @@
                         const refreshButton = document.getElementById('refresh-projects-btn');
 
                         function renderRandomProjects() {
-                            // Shuffle the array
                             for (let i = allProjects.length - 1; i > 0; i--) {
                                 const j = Math.floor(Math.random() * (i + 1));
                                 [allProjects[i], allProjects[j]] = [allProjects[j], allProjects[i]];
                             }
 
-                            const randomProjects = allProjects.slice(0, 2); // Get 2 projects
+                            const randomProjects = allProjects.slice(0, 2);
                             
-                            // Apply container styles directly with JS
                             container.style.display = 'flex';
                             container.style.gap = '20px';
                             container.style.marginTop = '15px';
@@ -108,10 +152,7 @@
                             container.innerHTML = html;
                         }
 
-                        // Initial render on page load
                         renderRandomProjects();
-
-                        // Add event listener to the button
                         refreshButton.addEventListener('click', renderRandomProjects);
                     });
                 </script>
@@ -123,9 +164,6 @@
                 </div>
                 <div class="hub-section hub-section-small">
                     <h2><a href="/tags/">Tags</a></h2>
-                </div>
-                <div class="hub-section hub-section-small">
-                    <h2><a href="/archive/">Archive</a></h2>
                 </div>
             </div>
         </div>
