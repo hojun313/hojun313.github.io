@@ -65,12 +65,16 @@
                 <script>
                     document.addEventListener('DOMContentLoaded', function() {
                         const allPosts = [
+                            {% assign threshold_date = "2025-06-01" %}
                             {% for post in site.posts %}
-                                {
-                                    "title": {{ post.title | jsonify }},
-                                    "url": "{{ post.url | relative_url }}",
-                                    "date": "{{ post.date | date: '%Y-%m-%d' }}"
-                                },
+                                {% assign post_date = post.date | date: "%Y-%m-%d" %}
+                                {% if post_date < threshold_date %}
+                                    {
+                                        "title": {{ post.title | jsonify }},
+                                        "url": "{{ post.url | relative_url }}",
+                                        "date": "{{ post.date | date: '%Y-%m-%d' }}"
+                                    },
+                                {% endif %}
                             {% endfor %}
                         ];
                         const container = document.getElementById('random-archive-container');
