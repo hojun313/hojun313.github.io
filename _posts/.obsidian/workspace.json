@@ -110,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:10",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -229,6 +229,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:새 베이스 생성하기": false,
       "switcher:빠른 전환기 열기": false,
       "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
@@ -237,8 +238,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "85b8975bb1808e23",
+  "active": "5bc1e3cc069ee355",
   "lastOpenFiles": [
+    "무제.canvas",
+    "무제.base",
     "1. 새로운/2025-08-22-Spin-Go-Level-Design-and-Features.md",
     "1. 새로운/2025-08-25-Ben 10 보다 생각난 끄적.md",
     "1. 새로운/2025-07-01-프로젝트 회고-GitHub Pages와 Firebase로 첫 실시간 멀티플레이 도전.md",
@@ -269,15 +272,12 @@
     "0. 다른 메모/정치",
     "0. 다른 메모",
     "무제 파일.canvas",
-    "무제.canvas",
-    "game_thoughts/2025-xx-xx-{양식}양식.md",
     "factory",
     "2025-02-03-환경 챌린지 탄소중립과 자원순환 런! 개인정보 처리 방침.zip",
     "짧/2025-02-08-(짧) 롤 상자 삭제 등.zip",
     "짧/2025-02-08-(짧) 롤 상자 삭제.zip",
     "영화 리뷰",
     "게임 메모/루덴스 프로젝트 2차 회의 준비) 장르 초안.txt",
-    "루덴스 프로젝트",
     "game_thoughts/엘든링 성소 표사.png",
     "Pasted image 20240118134903.png",
     "game_thoughts/Pasted image 20240108173853.jpg",
