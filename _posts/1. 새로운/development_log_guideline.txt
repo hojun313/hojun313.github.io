@@ -20,7 +20,7 @@
 ```markdown
 ---
 title: "[프로젝트명] 개발일지 - [기능 또는 작업명]"
-date: [YYYY-MM-DD]
+date: [YYYY-MM-DD] (시간, 시간대 추가 금지)
 categories: [Diary, GameDevLog, 프로젝트명]
 tags: [기술스택1, 기술스택2, 키워드1, 키워드2]
 ---
