@@ -8,27 +8,112 @@ title: Archive
   <a href="/" class="home-link">← Go to Hub</a>
 </div>
 
-<ul class="post-list">
-  {% for post in paginator.posts %}
-    <li>
-      <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
+<ul id="archive-post-list" class="post-list">
+  <!-- Posts will be injected here by JavaScript -->
 </ul>
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="btn">이전 페이지</a>
-  {% else %}
-    <span class="btn disabled">이전 페이지</span>
-  {% endif %}
-
-  <span class="page-number">페이지 {{ paginator.page }} / {{ paginator.total_pages }}</span>
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="btn">다음 페이지</a>
-  {% else %}
-    <span class="btn disabled">다음 페이지</span>
-  {% endif %}
+<div id="archive-pagination" class="pagination">
+  <!-- Pagination controls will be injected here by JavaScript -->
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const postsContainer = document.getElementById('archive-post-list');
+    const paginationContainer = document.getElementById('archive-pagination');
+
+    const allFilteredPosts = [
+        {% assign threshold_date = "2025-06-01" %}
+        {% for post in site.posts %}
+            {% assign post_date = post.date | date: "%Y-%m-%d" %}
+            {% if post_date < threshold_date %}
+                {
+                    "title": {{ post.title | jsonify }},
+                    "url": "{{ post.url | relative_url }}",
+                    "date": "{{ post.date | date: '%Y-%m-%d' }}"
+                },
+            {% endif %}
+        {% endfor %}
+    ];
+
+    let currentPage = 1;
+    const postsPerPage = 10; // You can change this number
+
+    function displayPosts() {
+        postsContainer.innerHTML = '';
+        paginationContainer.innerHTML = '';
+
+        if (allFilteredPosts.length === 0) {
+            postsContainer.innerHTML = '<li>No posts to display.</li>';
+            return;
+        }
+
+        const totalPages = Math.ceil(allFilteredPosts.length / postsPerPage);
+        
+        // Ensure currentPage is within valid bounds
+        if (currentPage < 1) {
+            currentPage = 1;
+        }
+        if (currentPage > totalPages) {
+            currentPage = totalPages;
+        }
+
+        const startIndex = (currentPage - 1) * postsPerPage;
+        const endIndex = startIndex + postsPerPage;
+        const paginatedPosts = allFilteredPosts.slice(startIndex, endIndex);
+
+        // Render posts for the current page
+        paginatedPosts.forEach(post => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<span class="post-date">${post.date}</span> <a href="${post.url}">${post.title}</a>`;
+            postsContainer.appendChild(listItem);
+        });
+
+        // Render pagination controls
+        let paginationHTML = '';
+
+        if (currentPage > 1) {
+            paginationHTML += `<a href="#" class="btn prev-btn">이전 페이지</a>`;
+        } else {
+            paginationHTML += `<span class="btn disabled">이전 페이지</span>`;
+        }
+
+        paginationHTML += `<span class="page-number">페이지 ${currentPage} / ${totalPages}</span>`;
+
+        if (currentPage < totalPages) {
+            paginationHTML += `<a href="#" class="btn next-btn">다음 페이지</a>`;
+        } else {
+            paginationHTML += `<span class="btn disabled">다음 페이지</span>`;
+        }
+        
+        paginationContainer.innerHTML = paginationHTML;
+
+        // Add event listeners
+        const prevButton = paginationContainer.querySelector('.prev-btn');
+        if (prevButton) {
+            prevButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayPosts();
+                    window.scrollTo(0, 0);
+                }
+            });
+        }
+
+        const nextButton = paginationContainer.querySelector('.next-btn');
+        if (nextButton) {
+            nextButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayPosts();
+                    window.scrollTo(0, 0);
+                }
+            });
+        }
+    }
+
+    // Initial display
+    displayPosts();
+});
+</script>
