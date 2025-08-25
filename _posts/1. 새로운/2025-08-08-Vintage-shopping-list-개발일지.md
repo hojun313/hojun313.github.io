@@ -1,8 +1,16 @@
 ---
-title: "[있고 없고 개발 일지] 2025년 8월 8일 - 프리셋 기능 및 푸터 추가"
+title: "[있고 없고 개발 일지] - 프리셋 기능 및 푸터 추가"
 date: 2025-08-08
-categories: [Diary, GameDevLog]
-tags: [JavaScript, HTML, CSS, 기능개선, 있고없고, 프리셋]
+categories:
+  - Diary
+  - GameDevLog
+tags:
+  - JavaScript
+  - HTML
+  - CSS
+  - 기능개선
+  - 있고없고
+  - 프리셋
 ---
 
 ## 있고 없고 (Itgo Eopgo) 웹 서비스, 신규 기능 추가 및 개선

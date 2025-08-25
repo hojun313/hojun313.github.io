@@ -1,8 +1,17 @@
 ---
-title: "[HabitStack 개발 일지] 2025년 7월 23일 - 프로젝트 최종 정리 및 회고"
+title: "[HabitStack 개발 일지] - 프로젝트 최종 정리 및 회고"
 date: 2025-07-23
-categories: [Diary, GameDevLog]
-tags: [React, TypeScript, Vite, Bootstrap, HabitStack, 웹개발, 프로젝트 관리]
+categories:
+  - Diary
+  - GameDevLog
+tags:
+  - React
+  - TypeScript
+  - Vite
+  - Bootstrap
+  - HabitStack
+  - 웹개발
+  - 프로젝트 관리
 ---
 
 ## HabitStack 프로젝트, 핵심 기능 구현 완료 및 최종 회고!
