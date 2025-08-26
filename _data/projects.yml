@@ -27,6 +27,9 @@
 
 - category: "Games"
   items:
+    - title: "Spin & Go"
+      url: "https://hojun313.github.io/Spin--Go/"
+      description: "반복되는 공간에서의 탈출"
     - title: "glatic_shooter"
       url: "https://hojun313.github.io/glatic_shooter/"
       description: "간단한 슈팅 게임 프로젝트"
