@@ -50,9 +50,117 @@ html[data-theme='light'] body {
     text-align: left;
 }
 
+/* Light mode styles */
+html[data-theme='light'] {
+    --bg-color: #f0f2f5; /* Light background */
+    --text-color: #333333; /* Dark text */
+    --container-bg: #ffffff; /* White container background */
+    --link-color: #007bff; /* Blue links */
+    --link-hover-color: #0056b3; /* Darker blue on hover */
+    --border-color: #e0e0e0; /* Light border */
+    --table-border-color: #cccccc;
+    --table-header-bg: #e9ecef;
+    --table-row-bg: #ffffff;
+    --table-alt-row-bg: #f8f9fa;
+    --heading-color: #212529; /* Darker heading for light mode */
+    --sub-accent-color: #2196F3; /* New blue sub-accent color */
+}
+
+/* Dark mode variables (matching main blog's dark theme) */
+html[data-theme='dark'] {
+    --bg-color: #121212;
+    --text-color: #E0E0E0;
+    --container-bg: #1e1e1e;
+    --link-color: #BB86FC; /* Purple links from main blog */
+    --link-hover-color: #fff;
+    --border-color: #444;
+    --table-border-color: #333;
+    --table-header-bg: #2a2a32;
+    --table-row-bg: #1e1e1e;
+    --table-alt-row-bg: #23232b;
+    --heading-color: #FFFFFF; /* White heading for dark mode */
+    --sub-accent-color: #2196F3; /* New blue sub-accent color */
+}
+
+/* Apply variables to body and html based on data-theme */
+html[data-theme='dark'] body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+html[data-theme='light'] body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.content-container {
+    background-color: var(--container-bg);
+    border: 1px solid var(--border-color);
+    /* Ensure content-container styles from main CSS are not completely lost */
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
 /* Override specific elements to use variables */
-.content-container h1, .content-container h2, .content-container h3, .content-container h4, .content-container h5, .content-container h6 {
-    color: var(--heading-color); /* Ensure headings also change color */
+.content-container h1, .content-container h2 {
+    color: var(--link-color); /* Make h1 and h2 purple in dark mode, blue in light mode */
+}
+
+.content-container h3, .content-container h4, .content-container h5, .content-container h6 {
+    color: var(--heading-color); /* Other headings use general heading color */
+}
+
+.content-container a {
+    color: var(--link-color);
+    text-decoration: none; /* From main blog style */
+    transition: color 0.3s; /* From main blog style */
+}
+
+.content-container a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline; /* From main blog style */
+}
+
+/* Table Styling */
+.content-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    color: var(--text-color); /* Ensure table text color changes */
+}
+
+.content-container th, .content-container td {
+    border: 1px solid var(--table-border-color);
+    padding: 8px;
+    text-align: left;
+}
+
+.content-container th {
+    background-color: var(--table-header-bg);
+    font-weight: bold;
+}
+
+.content-container tr:nth-child(even) {
+    background-color: var(--table-alt-row-bg);
+}
+
+.content-container tr:nth-child(odd) {
+    background-color: var(--table-row-bg);
+}
+
+/* Ensure strong tags have proper visibility */
+.content-container strong {
+    color: var(--sub-accent-color); /* Use new blue sub-accent color for strong emphasis */
+}
+
+/* Style for the theme toggle button */
+#theme-toggle {
+    color: var(--text-color); /* Button color matches text color */
+    /* Add transition for smoother color change */
+    transition: color 0.3s ease;
 }
 
 .content-container a {
