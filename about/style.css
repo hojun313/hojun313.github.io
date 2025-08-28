@@ -152,8 +152,12 @@ html[data-theme='light'] body {
 }
 
 /* Ensure strong tags have proper visibility */
-.content-container strong {
-    color: var(--sub-accent-color); /* Use new blue sub-accent color for strong emphasis */
+html[data-theme='dark'] .content-container strong {
+    color: var(--sub-accent-color); /* Use new blue sub-accent color for strong emphasis in dark mode */
+}
+
+html[data-theme='light'] .content-container strong {
+    color: var(--sub-accent-color); /* Use new blue sub-accent color for strong emphasis in light mode */
 }
 
 /* Style for the theme toggle button */
