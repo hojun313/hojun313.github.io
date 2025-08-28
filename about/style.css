@@ -1,74 +1,48 @@
+/* Light mode styles */
+html[data-theme='light'] {
+    --bg-color: #f0f2f5; /* Light background */
+    --text-color: #333333; /* Dark text */
+    --container-bg: #ffffff; /* White container background */
+    --link-color: #007bff; /* Blue links */
+    --link-hover-color: #0056b3; /* Darker blue on hover */
+    --border-color: #e0e0e0; /* Light border */
+}
+
+/* Dark mode variables (matching main blog's dark theme) */
+html[data-theme='dark'] {
+    --bg-color: #121212;
+    --text-color: #E0E0E0;
+    --container-bg: #1e1e1e;
+    --link-color: #BB86FC; /* Purple links from main blog */
+    --link-hover-color: #fff;
+    --border-color: #444;
+}
+
+/* Apply variables */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
-.container {
-    max-width: 900px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.content-container {
+    background-color: var(--container-bg);
+    border: 1px solid var(--border-color);
 }
 
-h1, h2, h3 {
-    color: #0056b3;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+/* Override specific elements if needed */
+.content-container h1, .content-container h2, .content-container h3 {
+    color: var(--text-color); /* Ensure headings also change color */
 }
 
-h1 { font-size: 2.5em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.5em; }
-
-p { margin-bottom: 10px; }
-
-a {
-    color: #007bff;
-    text-decoration: none;
+.content-container a {
+    color: var(--link-color);
 }
 
-a:hover {
-    text-decoration: underline;
+.content-container a:hover {
+    color: var(--link-hover-color);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block; /* For centering images */
-    margin: 0 auto; /* For centering images */
-}
-
-/* Table styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-    color: #555;
-}
-
-/* Specific styling for badge images within tables/paragraphs */
-table img, p img {
-    display: inline-block; /* Allow badges to sit next to each other */
-    margin: 0 5px 0 0; /* Small margin between badges */
-    vertical-align: middle; /* Align badges nicely with text */
+/* Style for the theme toggle button */
+#theme-toggle {
+    color: var(--text-color); /* Button color matches text color */
 }
