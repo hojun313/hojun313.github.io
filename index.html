@@ -56,7 +56,7 @@
 
             <div class="hub-section">
                 <div class="hub-section-header" style="display: flex; justify-content: space-between; align-items: center;">
-                    <h2 style="margin: 0;"><a href="/archive/">Archive (~2025 ) ({% assign archive_posts = site.posts | where_exp: "post", "post.date < '2025-06-01'" %}{{ archive_posts.size }})</a></h2>
+                    <h2 style="margin: 0;"><a href="/archive/">Archive (~2025-06-01) ({{ site.posts | size }})</a></h2>
                     <button id="refresh-archive-btn" class="refresh-btn" title="Reload Archive">↻</button>
                 </div>
                 <ul id="random-archive-container" class="hub-post-list">
@@ -106,7 +106,7 @@
 
             <div class="hub-section">
                 <div class="hub-section-header" style="display: flex; justify-content: space-between; align-items: center;">
-                    <h2 style="margin: 0;"><a href="/projects/">Projects ({% assign project_count = 0 %}{% for category in site.data.projects %}{% assign project_count = project_count | plus: category.items.size %}{% endfor %}{{ project_count }})</a></h2>
+                    <h2 style="margin: 0;"><a href="/projects/">Projects ({{ site.data.projects | size }})</a></h2>
                     <button id="refresh-projects-btn" class="refresh-btn" title="Reload Projects">↻</button>
                 </div>
                 <div id="random-projects-container">
