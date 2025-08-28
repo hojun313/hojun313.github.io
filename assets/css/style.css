@@ -365,7 +365,3 @@ pre code {
   /* 테이블 라이트 모드 */
   tbody tr:hover { background-color: var(--bg-body); }
 }
-
-.hub-section {
-    background-color: var(--bg-container);
-}
