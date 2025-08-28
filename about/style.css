@@ -18,8 +18,13 @@ html[data-theme='dark'] {
     --border-color: #444;
 }
 
-/* Apply variables */
-body {
+/* Apply variables to body and html based on data-theme */
+html[data-theme='dark'] body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+html[data-theme='light'] body {
     background-color: var(--bg-color);
     color: var(--text-color);
 }

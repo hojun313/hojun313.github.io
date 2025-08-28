@@ -1,3 +1,5 @@
+console.log('script.js loaded and running'); // Added for debugging
+
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement; // This refers to the <html> tag
