@@ -1,41 +1,36 @@
-# 색상 팔레트 (Color Palette)
+# 통합된 색상 팔레트 (Consolidated Color Palette)
 
-# 검정 계열 (Black Tones)
-black: "#000000"                      # 찐 검정: Black                 # 이미지 쉴드에 사용 (Image shields)
-dark_background: "#121212"            # 검정: Cursed Black             # 기본 배경 (body, html)
-dark_container_background: "#1e1e1e"   # 어두운 회색: Dark Gray          # 컨테이너 배경 (content-container, blog-list-container, hub-section)
-dark_project_card_background: "#23232b" # 진한 회색: Deep Gray           # 프로젝트 카드 배경 (project-card, projects-nav a, projects-back)
-dark_blog_post_background: "#2a2a32"    # 더 진한 회색: Deeper Gray       # 블로그 게시물 항목 배경 (blog-post-item, dark table header)
+# 다크 모드 (Dark Mode)
 
-# 회색 계열 (Gray Tones)
-white: "#FFFFFF"                       # 흰색: White                    # 흰색 텍스트 (hub-header h1, blog-list-title, blog-post-item:hover h2)
-light_text: "#E0E0E0"                  # 밝은 회색: Light Gray          # 밝은 텍스트 (body, html, hub-post-list a)
-medium_text: "#A0A0A0"                 # 중간 회색: Medium Gray         # 보조 텍스트 (hub-header p, post-date, hub-post-list .post-date)
-dark_border: "#333"                    # 어두운 테두리: Dark Border      # 어두운 테두리 (hub-section, post-content h2, project-category)
-medium_dark_border: "#444"             # 중간 어두운 테두리: Medium Dark Border # 중간 어두운 테두리 (page-header, pagination, post-header, post-footer)
-pagination_number: "#888"              # 회색: Gray                     # 페이지네이션 번호 (pagination .page-number)
-disabled_button: "#555"                # 어두운 회색: Dark Gray          # 비활성화 버튼 (pagination .btn.disabled)
-post_meta_text: "#aaa"                 # 연한 회색: Light Gray          # 게시물 메타 텍스트 (post-meta)
-project_card_text: "#bdbdbd"           # 밝은 회색: Light Gray          # 프로젝트 카드 텍스트 (project-card p, projects-header p, projects-desc)
-blog_summary_text: "#d0c9e6"           # 연보라 회색: Lavender Gray      # 블로그 요약 텍스트 (blog-post-item p.blog-post-summary)
+# 배경 계열 (Background Tones)
+bg_body: "#121212" # 메인 본문 배경
+bg_container: "#1e1e1e" # 일반 컨테이너 배경 / 테이블 짝수 행
+bg_card_post: "#2a2a32" # 프로젝트 카드, 블로그 게시물, 테이블 헤더, 테이블 홀수 행, 인라인 코드 배경
+bg_black: "#000000" # 미리 서식화된 코드 블록 배경
 
-# 보라색 계열 (Purple Tones)
-main_accent_purple: "#BB86FC"          # 메인 강조 보라색: Main Purple   # 메인 강조 보라색 (hub-section h2 a, post-list a, page-header home-link, pagination .btn, post-tags .tag, project-card h2, projects-header h1, projects-title, projects-nav a, projects-back, category-title, blog-post-item:hover border-color, blog-post-item h2.blog-post-title)
-sub_accent_purple_light_mode: "#6200EE" # 진한 보라색: Deep Purple      # 서브 강조 보라색 (라이트 모드 강조 텍스트)
+# 텍스트 계열 (Text Tones)
+text_primary: "#E0E0E0" # 기본 텍스트 / 블로그 요약
+text_secondary: "#bdbdbd" # 보조 텍스트 / 설명 / 페이지네이션 번호
+text_heading: "#FFFFFF" # 메인 제목 / 강한 강조
 
-# 파란색 계열 (Blue Tones)
-sub_accent_blue_dark_mode: "#81D4FA"   # 하늘색: Sky Blue               # 서브 강조 파란색 (다크 모드 강조 텍스트)
-light_mode_link_blue: "#007bff"        # 파란색: Blue                   # 라이트 모드 링크 파란색 (post-list a)
-light_mode_link_hover_blue: "#0056b3"  # 진한 파란색: Dark Blue          # 라이트 모드 링크 호버 파란색 (post-list a:hover)
+# 강조 계열 (Accent Tones)
+accent_main: "#BB86FC" # 주요 상호작용 및 강조 색상
 
+# 테두리 및 유틸리티 계열 (Border & Utility Tones)
+border_dark: "#333" # 일반 테두리
+border_medium: "#444" # 약간 밝은 테두리 / 구분선
+utility_disabled: "#555" # 비활성화된 버튼 상태
 
-
+# 라이트 모드 (Light Mode)
 
 # 라이트 테마 전용 색상 (Light Theme Specific Colors)
-light_mode_background: "#f0f2f5"             # 연한 회색: Light Gray          # 라이트 모드 기본 배경
-light_mode_container_background: "#ffffff"   # 흰색: White                    # 라이트 모드 컨테이너 배경
-light_mode_table_border: "#cccccc"           # 연한 회색: Light Gray          # 라이트 모드 테이블 테두리
-light_mode_table_header_background: "#e9ecef" # 연한 회색: Light Gray          # 라이트 모드 테이블 헤더 배경
-light_mode_table_row_background: "#ffffff"   # 흰색: White                    # 라이트 모드 테이블 행 배경
+light_mode_background: "#e9ecef" # 연한 회색: Light Gray # 라이트 모드 기본 배경
+light_mode_container_background: "#ffffff" # 흰색: White # 라이트 모드 컨테이너 배경
+light_mode_table_border: "#cccccc" # 연한 회색: Light Gray # 라이트 모드 테이블 테두리
+light_mode_table_header_background: "#e9ecef" # 연한 회색: Light Gray # 라이트 모드 테이블 헤더 배경
+light_mode_table_row_background: "#ffffff" # 흰색: White # 라이트 모드 테이블 행 배경
 light_mode_table_alt_row_background: "#f8f9fa" # 아주 연한 회색: Very Light Gray # 라이트 모드 테이블 대체 행 배경
-light_mode_heading_color: "#212529"          # 어두운 회색: Dark Gray          # 라이트 모드 헤딩 색상
+light_mode_heading_color: "#212529" # 어두운 회색: Dark Gray # 라이트 모드 헤딩 색상
+sub_accent_purple_light_mode: "#6200EE" # 진한 보라색: Deep Purple # 서브 강조 보라색 (라이트 모드 강조 텍스트)
+light_mode_link_blue: "#007bff" # 파란색: Blue # 라이트 모드 링크 파란색
+light_mode_link_hover_blue: "#0056b3" # 진한 파란색: Dark Blue # 라이트 모드 링크 호버 파란색
