@@ -63,7 +63,7 @@ html[data-theme='light'] {
     --table-row-bg: #ffffff;
     --table-alt-row-bg: #f8f9fa;
     --heading-color: #212529; /* Darker heading for light mode */
-    --sub-accent-color: #81D4FA; /* Updated blue sub-accent color */
+    --sub-accent-color: #6200EE; /* Dark purple for light mode emphasized text */
 }
 
 /* Dark mode variables (matching main blog's dark theme) */
