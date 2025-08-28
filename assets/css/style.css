@@ -365,3 +365,66 @@ pre code {
   /* 테이블 라이트 모드 */
   tbody tr:hover { background-color: var(--bg-body); }
 }
+
+/* --- Hub Page Fixes --- */
+
+/* --- Hub Page Section Overrides --- */
+.hub-section {
+    background-color: var(--bg-container);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.hub-section h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-medium);
+    margin-bottom: 15px;
+}
+
+.hub-post-list {
+    margin-top: 15px;
+}
+
+.hub-post-list li {
+    border-bottom-color: var(--border-medium);
+}
+
+#random-projects-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.hub-project-item {
+    flex: 1;
+    background-color: var(--bg-card-post);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border-dark);
+    transition: all 0.2s ease-in-out;
+    text-align: left;
+}
+
+.hub-project-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hub-project-title {
+    margin: 0 0 8px 0;
+    font-size: 1.2em;
+    color: var(--accent-main);
+}
+
+.hub-project-description {
+    margin: 0;
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.hub-section-small {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
