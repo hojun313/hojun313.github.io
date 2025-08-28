@@ -144,10 +144,10 @@
                             if (randomProjects.length > 0) {
                                 randomProjects.forEach(project => {
                                     html += `
-                                        <div class="hub-project-item">
-                                            <a href="${project.url}" target="_blank" rel="noopener noreferrer">
-                                                <h3 class="hub-project-title">${project.title}</h3>
-                                                <p class="hub-project-description">${project.description}</p>
+                                        <div class="hub-project-item" style="flex: 1; background-color: #2a2a32; padding: 15px; border-radius: 8px; border: 1px solid #333; transition: all 0.2s ease-in-out;">
+                                            <a href="${project.url}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                                                <h3 class="hub-project-title" style="margin: 0 0 8px 0; font-size: 1.2em; color: #BB86FC;">${project.title}</h3>
+                                                <p class="hub-project-description" style="margin: 0; font-size: 0.9em; color: #A0A0A0; line-height: 1.4;">${project.description}</p>
                                             </a>
                                         </div>
                                     `;
@@ -167,13 +167,6 @@
                     <h2><a href="/about/">About Me</a></h2>
                 </div>
                 <div class="hub-section hub-section-small">
-                    <h2><a href="/tags/">Tags</a></h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>on hub-section-small">
                     <h2><a href="/tags/">Tags</a></h2>
                 </div>
             </div>
