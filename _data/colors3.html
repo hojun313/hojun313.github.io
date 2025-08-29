@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refined Consolidated Color Palette Demo</title>
+    <style>
+        /* Refined Consolidated Color Variables */
+        :root {
+            --bg-body: #121212;
+            --bg-container: #1e1e1e;
+            --bg-card: #23232b;
+            --bg-post: #2a2a32;
+            --bg-black: #000000;
+
+            --text-primary: #E0E0E0;
+            --text-secondary: #bdbdbd;
+            --text-heading: #FFFFFF;
+
+            --accent-main: #BB86FC;
+
+            --border-dark: #333;
+            --border-medium: #444;
+            --utility-disabled: #555;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: var(--bg-container);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1, h2, h3 {
+            color: var(--text-heading);
+            border-bottom: 1px solid var(--border-medium);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; }
+        h3 { font-size: 1.5em; }
+
+        .color-box {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            border: 1px solid var(--border-dark);
+            margin: 5px;
+            vertical-align: middle;
+        }
+
+        .section-title {
+            color: var(--accent-main);
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        /* Blog Post Item Demo */
+        .blog-post-item {
+            background: var(--bg-post);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            padding: 22px 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            border: 1.5px solid transparent;
+        }
+        .blog-post-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 28px rgba(187,134,252,0.15);
+            border-color: var(--accent-main);
+        }
+        .blog-post-item h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--accent-main);
+            margin: 0 0 0.5rem 0;
+            text-decoration: none;
+            transition: color 0.2s;
+            border-bottom: none; /* Override general h2 border */
+            padding-bottom: 0;
+        }
+        .blog-post-item:hover h2 {
+            color: var(--text-heading);
+            text-decoration: underline;
+        }
+        .blog-post-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.7rem;
+            display: block;
+        }
+        .blog-post-summary {
+            color: var(--text-primary);
+            font-size: 1.05rem;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Project Card Demo */
+        .project-card {
+            background: var(--bg-card);
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+            padding: 28px 20px 20px 20px;
+            width: 260px;
+            transition: transform 0.15s, box-shadow 0.15s;
+            text-align: left;
+            border: 1px solid var(--border-dark);
+            position: relative;
+            display: inline-block; /* For demo layout */
+            margin: 10px;
+        }
+        .project-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(187,134,252,0.18);
+            border-color: var(--accent-main);
+        }
+        .project-card h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--accent-main);
+            border-bottom: none; /* Override general h2 border */
+            padding-bottom: 0;
+        }
+        .project-card p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 1em;
+        }
+
+        /* Table Demo */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: var(--bg-container);
+        }
+        th, td {
+            border: 1px solid var(--border-dark);
+            padding: 12px 15px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--bg-post);
+            color: var(--text-heading);
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: var(--bg-container);
+        }
+        tr:nth-child(odd) {
+            background-color: var(--bg-card);
+        }
+
+        /* Emphasis and Blockquote */
+        em {
+            color: var(--accent-main);
+            font-style: normal;
+        }
+        strong {
+            color: var(--text-heading);
+        }
+        blockquote {
+            border-left: 4px solid var(--accent-main);
+            padding-left: 15px;
+            margin: 20px 0;
+            color: var(--text-secondary);
+        }
+        code {
+            background-color: var(--bg-post); /* Changed to bg-post as requested for inline code */
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: var(--text-primary);
+        }
+        pre {
+            background-color: var(--bg-black); /* Changed to bg-black as requested */
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            color: var(--text-primary);
+        }
+
+        /* Buttons/Links */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: var(--accent-main);
+            color: var(--bg-body); /* Text color for buttons */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: var(--text-heading); /* Lighter hover for accent */
+            color: var(--accent-main);
+        }
+        a {
+            color: var(--accent-main);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Refined Consolidated Color Palette Demo</h1>
+        <p>This page demonstrates the refined consolidated color palette, incorporating your feedback to retain more visual distinctions while still reducing the overall color count.</p>
+
+        <h2 class="section-title">Background Colors</h2>
+        <p>These are the primary background colors used throughout the site.</p>
+        <div style="background-color: var(--bg-body); padding: 20px; margin-bottom: 10px; border-radius: 5px;">
+            <code>--bg-body</code> (#121212) - Main Body Background
+        </div>
+        <div style="background-color: var(--bg-container); padding: 20px; margin-bottom: 10px; border-radius: 5px;">
+            <code>--bg-container</code> (#1e1e1e) - General Container Background / Even Table Rows
+        </div>
+        <div style="background-color: var(--bg-card); padding: 20px; margin-bottom: 10px; border-radius: 5px;">
+            <code>--bg-card</code> (#23232b) - Project Card Background / Odd Table Rows
+        </div>
+        <div style="background-color: var(--bg-post); padding: 20px; margin-bottom: 10px; border-radius: 5px;">
+            <code>--bg-post</code> (#2a2a32) - Blog Post Item Background / Table Headers / Inline Code Background
+        </div>
+        <div style="background-color: var(--bg-black); padding: 20px; margin-bottom: 10px; border-radius: 5px;">
+            <code>--bg-black</code> (#000000) - Preformatted Code Block Background
+        </div>
+
+        <h2 class="section-title">Text Colors</h2>
+        <p>Demonstration of various text colors on a typical container background.</p>
+        <div style="background-color: var(--bg-container); padding: 20px; border-radius: 5px;">
+            <p style="color: var(--text-heading); font-size: 1.2em;"><code>--text-heading</code> (#FFFFFF) - Main Titles / Strong Emphasis</p>
+            <p style="color: var(--text-primary);"><code>--text-primary</code> (#E0E0E0) - Default Body Text / Blog Summaries</p>
+            <p style="color: var(--text-secondary);"><code>--text-secondary</code> (#bdbdbd) - Secondary Text / Descriptions / Pagination Numbers</p>
+            <p style="color: var(--accent-main);"><code>--accent-main</code> (#BB86FC) - Accent Text / Links</p>
+        </div>
+
+        <h2 class="section-title">Main Accent: <code>--accent-main</code> (#BB86FC)</h2>
+        <p>This color is used for primary interactive elements and highlights.</p>
+        <h3>Example Link: <a href="#">This is an accent link</a></h3>
+        <h3>Example Button: <a href="#" class="button">Click Me!</a></h3>
+        <h3>Example Title: <span style="color: var(--accent-main);">Accent Section Title</span></h3>
+
+        <h2 class="section-title">Blog Post Item Demo</h2>
+        <div class="blog-post-item">
+            <h2><a href="#">Sample Blog Post Title</a></h2>
+            <span class="blog-post-date">August 28, 2025</span>
+            <p class="blog-post-summary">This is a summary of a sample blog post. It uses <code>--text-primary</code> for its content and demonstrates how the title changes color on hover, and the border highlights with <code>--accent-main</code>.</p>
+        </div>
+        <div class="blog-post-item">
+            <h2><a href="#">Another Blog Post Example</a></h2>
+            <span class="blog-post-date">August 27, 2025</span>
+            <p class="blog-post-summary">Another example to show consistency. The background is <code>--bg-post</code> and the text is <code>--text-primary</code>.</p>
+        </div>
+
+        <h2 class="section-title">Project Card Demo</h2>
+        <div class="project-card">
+            <h2>Sample Project Title</h2>
+            <p>This is a brief description of a sample project. The title uses <code>--accent-main</code> and the description uses <code>--text-secondary</code>. The card background is <code>--bg-card</code>.</p>
+        </div>
+        <div class="project-card">
+            <h2>Another Project</h2>
+            <p>A second project card to show the hover effect and consistent styling. Hover over me to see the accent border!</p>
+        </div>
+
+        <h2 class="section-title">Table Demo</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                    <td>Row 1, Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Cell 1</td>
+                    <td>Row 2, Cell 2</td>
+                    <td>Row 2, Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Row 3, Cell 1</td>
+                    <td>Row 3, Cell 2</td>
+                    <td>Row 3, Cell 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">Emphasis, Blockquote, and Code</h2>
+        <p>This is a normal paragraph with some <em>emphasized text</em> using <code>--accent-main</code> and <strong>strong text</strong> using <code>--text-heading</code>.</p>
+        <blockquote>
+            This is a blockquote. It has a left border of <code>--accent-main</code> and its text color is <code>--text-secondary</code>. It's great for quoting longer passages.
+        </blockquote>
+        <p>Inline code example: <code>console.log("Hello World!");</code></p>
+        <pre><code>
+function exampleCode() {
+    const message = "This is a code block.";
+    console.log(message);
+}
+        </code></pre>
+    </div>
+</body>
+</html>
