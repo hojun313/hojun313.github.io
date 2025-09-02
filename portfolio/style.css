@@ -183,3 +183,22 @@ strong {
 .project-card a.dev-logs-link {
     background-color: #f686fc;
 }
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 300px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 3px solid var(--link-color); /* Optional: add a border */
+}
+
+.about-section div {
+    flex-grow: 1; /* Allows the text div to take up remaining space */
+}
