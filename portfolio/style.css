@@ -120,12 +120,7 @@ tr:nth-child(even) {
     margin: 15px 0 10px;
 }
 
-.project-card p {
-    padding: 0 15px;
-    font-size: 0.95em;
-    flex-grow: 1;
-    color: var(--text-color);
-}
+
 
 .project-card a {
     display: inline-block;
@@ -157,4 +152,20 @@ tr:nth-child(even) {
     border-radius: 12px;
     font-size: 0.8em;
     border: 1px solid var(--border-color);
+}
+
+/* Styles for the new description format */
+.project-card .description-list {
+    text-align: left;
+    padding: 0 15px;
+    font-size: 0.9em;
+    flex-grow: 1;
+}
+
+.project-card .description-list p {
+    margin: 5px 0;
+}
+
+.project-card .description-list strong {
+    color: var(--link-color);
 }
