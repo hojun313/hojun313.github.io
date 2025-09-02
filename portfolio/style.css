@@ -219,3 +219,33 @@ strong {
 .about-section div {
     flex-grow: 1;
 }
+
+summary {
+    cursor: pointer;
+    list-style: none; /* 기본 화살표 아이콘 제거 */
+}
+
+/* 웹킷 기반 브라우저(Chrome, Safari)용 기본 화살표 제거 */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* 제목(h2)이 summary와 같은 줄에 위치하도록 조정 */
+summary h2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 커스텀 화살표 아이콘 추가 */
+summary::before {
+    content: '▼';
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: transform 0.2s ease-in-out;
+    vertical-align: middle;
+}
+
+/* details가 닫혀있을 때 화살표 방향 변경 */
+details:not([open]) > summary::before {
+    transform: rotate(-90deg);
+}
