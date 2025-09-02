@@ -124,7 +124,7 @@ tr:nth-child(even) {
 
 .project-card a {
     display: inline-block;
-    margin: 15px;
+    margin: 5px;
     padding: 10px 20px;
     background: var(--link-color);
     color: var(--container-bg);
