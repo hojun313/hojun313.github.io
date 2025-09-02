@@ -184,6 +184,10 @@ strong {
     background-color: #f686fc;
 }
 
+.project-card p {
+    padding: 0 10px;
+}
+
 .about-section {
     display: flex;
     align-items: center;
