@@ -2,7 +2,7 @@
 title: "WAIA 개발일지 - 인앱 피드백 기능 구현 및 버그 수정"
 date: 2025-08-21
 categories: [Diary, GameDevLog, WAIA]
-tags: [JavaScript, CSS, HTML, Firebase, Firestore, BugFix]
+tags: [JavaScript, CSS, HTML, Firebase, Firestore, BugFix, WAIA]
 ---
 
 ## 👋 개요
