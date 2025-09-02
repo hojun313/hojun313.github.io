@@ -8,7 +8,7 @@
       description: "관심사, 선물 위시리스트 서비스"
     - title: "있고 없고 (Itgo Eopgo)"
       url: "https://hojun313.github.io/Vintage-shopping-list/"
-      description: "미니멀 쇼핑 리스트 웹서비스"
+      description: "미니멀 쇼핑 리스트 서비스"
     - title: "HabitStack"
       url: "https://hojun313.github.io/HabitStack/"
       description: "스택형 습관 관리 서비스"
@@ -23,7 +23,7 @@
       description: "개인정보 처리방침 파악 서비스"
     - title: "War-Memorial-Database"
       url: "https://github.com/hojun313/The-National-War-Memorial-Database/"
-      description: "한국 전사자 명단 데이터베이스 및 수집 프로젝트"
+      description: "한국 전사자 명단 DB 및 수집"
 
 - category: "Games"
   items:
