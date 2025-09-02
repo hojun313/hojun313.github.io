@@ -141,3 +141,20 @@ tr:nth-child(even) {
 .project-card a:hover {
     opacity: 0.8;
 }
+
+/* Project Tags */
+.project-card .tags {
+    padding: 0 15px 10px;
+    text-align: center;
+}
+
+.project-card .tags span {
+    display: inline-block;
+    background-color: var(--table-header-bg);
+    color: var(--text-color);
+    padding: 4px 10px;
+    margin: 2px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    border: 1px solid var(--border-color);
+}
