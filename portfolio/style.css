@@ -166,6 +166,20 @@ tr:nth-child(even) {
     margin: 5px 0;
 }
 
-.project-card .description-list strong {
-    color: var(--link-color);
+strong {
+    color: #868cfc;
+}
+
+/* Link-specific styles */
+.project-card a.play-store-link,
+.project-card a.play-link {
+    background-color: #868cfc;
+}
+
+.project-card a.github-link {
+    background-color: #bb86fc;
+}
+
+.project-card a.dev-logs-link {
+    background-color: #f686fc;
 }
