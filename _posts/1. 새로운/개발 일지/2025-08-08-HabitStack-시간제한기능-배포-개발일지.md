@@ -14,6 +14,7 @@ tags:
   - 시간제한
   - 배포
   - GitHub Pages
+  - GameDevLog
 ---
 
 ## HabitStack 프로젝트, 시간 제한 기능 구현 및 GitHub Pages 배포 완료!

@@ -265,6 +265,12 @@ details:not([open]) > summary::before {
     gap: 20px;
 }
 
+.article-grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
 .article-card {
     background-color: var(--table-row-bg);
     border: 1px solid var(--border-color);

@@ -2,7 +2,7 @@
 title: "Spin-Go 개발일지 - 레벨 디자인 및 기능 추가"
 date: 2025-08-22
 categories: [Diary, GameDevLog, Spin-Go]
-tags: [Godot, JavaScript, HTML, CSS, GameDevelopment, LevelDesign, UI, Spin-Go]
+tags: [Godot, JavaScript, HTML, CSS, GameDevelopment, LevelDesign, UI, Spin-Go, GameDevLog]
 ---
 
 ## 👋 개요

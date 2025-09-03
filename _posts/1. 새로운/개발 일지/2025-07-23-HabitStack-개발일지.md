@@ -12,6 +12,7 @@ tags:
   - HabitStack
   - 웹개발
   - 프로젝트 관리
+  - GameDevLog
 ---
 
 ## HabitStack 프로젝트, 핵심 기능 구현 완료 및 최종 회고!
