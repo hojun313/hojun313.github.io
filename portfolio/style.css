@@ -12,6 +12,7 @@ html[data-theme='light'] {
     --table-alt-row-bg: #f8f9fa;
     --heading-color: #212529;
     --h1: #212529;
+    --name: #2ECC71;
 }
 
 /* Dark mode variables */
@@ -28,6 +29,7 @@ html[data-theme='dark'] {
     --table-alt-row-bg: #23232b;
     --heading-color: #FFFFFF;
     --h1: #007bff;
+    --name: #46D7AC;
 }
 
 body {
@@ -208,11 +210,16 @@ strong {
     margin-bottom: 20px;
 }
 
+.name {
+    color: var(--name);
+    font-weight: bold;
+}
+
 .profile-picture {
     width: 150px;
     border-radius: 15%;
     object-fit: cover;
-    border: 3px solid var(--link-color);
+    border: 3px solid var(--name);
 }
 
 .about-section div {
