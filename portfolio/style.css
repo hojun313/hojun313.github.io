@@ -216,7 +216,7 @@ strong {
 }
 
 .profile-picture {
-    width: 150px;
+    width: 165px;
     border-radius: 15%;
     object-fit: cover;
     border: 3px solid var(--name);
