@@ -3,7 +3,7 @@ title: "[HabitStack 개발 일지] - 시간 제한 기능 구현 및 GitHub Page
 date: 2025-08-08
 categories:
   - Diary
-  - GameDevLog
+  - DevLog
 tags:
   - React
   - TypeScript
@@ -14,7 +14,7 @@ tags:
   - 시간제한
   - 배포
   - GitHub Pages
-  - GameDevLog
+  - DevLog
 ---
 
 ## HabitStack 프로젝트, 시간 제한 기능 구현 및 GitHub Pages 배포 완료!

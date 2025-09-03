@@ -3,7 +3,7 @@ title: "[있고 없고 개발 일지] - 초기 기능 구현 완료"
 date: 2025-07-25
 categories:
   - Diary
-  - GameDevLog
+  - DevLog
 tags:
   - HTML
   - CSS
@@ -11,7 +11,7 @@ tags:
   - 웹개발
   - 모바일 최적화
   - 있고없고
-  - GameDevLog
+  - DevLog
 ---
 
 ## 있고 없고 (Itgo Eopgo) 웹 서비스, 초기 기능 구현 완료!

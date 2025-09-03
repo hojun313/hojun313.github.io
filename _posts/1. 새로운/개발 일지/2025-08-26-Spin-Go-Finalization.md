@@ -1,8 +1,8 @@
 ---
 title: "Spin-Go 개발일지 - 최종 연출 완성 및 배포"
 date: 2025-08-26
-categories: [Diary, GameDevLog, Spin-Go]
-tags: [JavaScript, GameDevelopment, Ending, UX, Popup, Deployment, Spin-Go, GameDevLog]
+categories: [Diary, DevLog, Spin-Go]
+tags: [JavaScript, GameDevelopment, Ending, UX, Popup, Deployment, Spin-Go, DevLog]
 ---
 
 ## 📝 오늘 한 일: 최종 완성
