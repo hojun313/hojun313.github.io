@@ -9,9 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const storedTheme = localStorage.getItem('theme');
-    // Default to dark mode if no preference is stored or if the system prefers dark
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const defaultTheme = storedTheme || (prefersDark ? 'dark' : 'light');
+    // Default to dark mode if no preference is stored
+    const defaultTheme = storedTheme || 'dark';
     setTheme(defaultTheme);
 
     themeToggle.addEventListener('click', () => {
