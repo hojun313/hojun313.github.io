@@ -322,6 +322,14 @@ details:not([open]) > summary::before {
     opacity: 0.8;
 }
 
+a[target="_blank"]::after {
+    content: ' ↗';
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 0.8em;
+    text-decoration: none !important;
+}
+
 .closing-message {
     text-align: center;
     margin-top: 20px;
