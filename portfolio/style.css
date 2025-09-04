@@ -316,3 +316,10 @@ details:not([open]) > summary::before {
 .article-card a.read-more:hover {
     opacity: 0.8;
 }
+
+.closing-message {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: var(--text-color);
+}
