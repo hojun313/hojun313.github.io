@@ -128,6 +128,11 @@ tr:nth-child(even) {
     width: 100%;
     height: 150px;
     object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
 }
 
 .project-card h3 {
