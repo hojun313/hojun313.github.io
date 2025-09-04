@@ -453,8 +453,11 @@
             </div>
         </details>
 
-        <details open>
+        <details open id="game-log-details">
             <summary><h2>🕹️ 게임 플레이 로그 (Game Play Log)</h2></summary>
+            <div class="game-log-controls">
+                <button id="toggle-game-log">더 보기</button>
+            </div>
             <table style="width: 100%;">
                 <thead>
                     <tr>
@@ -463,923 +466,926 @@
                         <th>플레이 타임/레벨 (Playtime/Level)</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody id="game-log-body">
+                    <tr data-playtime="5000">
                         <td>League of Legends</td>
                         <td>MOBA</td>
                         <td>5000+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="1000">
                         <td>Mafia42</td>
                         <td>Social Deduction</td>
                         <td>1000+ 시간</td>
                     </tr>
-                    <tr>
-                    <tr>
+                    <tr data-playtime="1000">
                         <td>Minecraft</td>
                         <td>Sandbox, Survival</td>
                         <td>1000+ 시간</td>
                     </tr>
+                    <tr data-playtime="500">
                         <td>Cartrider</td>
                         <td>Kart Racing</td>
                         <td>500+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="500">
                         <td>Overwatch</td>
                         <td>Hero Shooter, FPS</td>
                         <td>500+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="250">
                         <td>GTA Online</td>
                         <td>Action-adventure, Multiplayer</td>
                         <td>250+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="200">
+                        <td>Heroes of the Storm</td>
+                        <td>MOBA</td>
+                        <td>200+ 시간</td>
+                    </tr>
+                    <tr data-playtime="200">
                         <td>Cookie Run: For Kakao</td>
                         <td>Endless Running</td>
                         <td>200+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="200">
                         <td colspan="2">Pokémon Series: Pearl, Platinum, SoulSilver, Black, Black 2, X</td>
                         <td>200+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="200">
                         <td>Seven Knights</td>
                         <td>RPG, Strategy</td>
                         <td>200+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="150">
                         <td>Sid Meier's Civilization V</td>
                         <td>4X Turn-based Strategy</td>
                         <td>150+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="150">
                         <td>Terraria</td>
                         <td>Action-adventure, Sandbox</td>
                         <td>150+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="100">
                         <td>Bubble Fighter</td>
                         <td>Arcade, Third-Person Shooter</td>
                         <td>100+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="100">
                         <td>Cookie Clicker</td>
                         <td>Idle Game, Clicker</td>
                         <td>100+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="100">
                         <td>Cookie Run: Kingdom</td>
                         <td>RPG, City-building</td>
                         <td>100+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="100">
                         <td>GTA5</td>
                         <td>Action-adventure, Open World</td>
                         <td>100+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="100">
                         <td>Maple Story</td>
                         <td>MMORPG, Side-scrolling</td>
                         <td>100+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="100">
                         <td>Modoo Marble</td>
                         <td>Board Game, Strategy</td>
                         <td>100+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="70">
                         <td>Palworld</td>
                         <td>Action-adventure, Survival, Monster-taming</td>
                         <td>70+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="62">
                         <td>Sid Meier's Civilization VI</td>
                         <td>4X Turn-based Strategy</td>
                         <td>62+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="50">
                         <td>Bounce Ball</td>
                         <td>Arcade, Puzzle</td>
                         <td>50+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="50">
                         <td>Cookie Run: Ovenbreak</td>
                         <td>Endless Runner</td>
                         <td>50+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="50">
                         <td>Hollow Knight</td>
                         <td>Metroidvania, Action-adventure</td>
                         <td>50+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="50">
                         <td>Kirby: Squeak Squad</td>
                         <td>Action-platformer</td>
                         <td>50+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="50">
                         <td>Pokemon Mystery Dungeon: Blue Rescue Team</td>
                         <td>RPG, Roguelike</td>
                         <td>50+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="40">
                         <td>Cooking Mama</td>
                         <td>Simulation, Minigame</td>
                         <td>40+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="40">
                         <td>Cyberpunk 2077</td>
                         <td>Action RPG, Open World</td>
                         <td>40+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="40">
                         <td>Dragon Ball Wii</td>
                         <td>Fighting, Action</td>
                         <td>40+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="40">
                         <td>Hades</td>
                         <td>Roguelike, Action RPG</td>
                         <td>40+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="40">
                         <td colspan="2">Mario & Sonic Olympic Series: Beijing,  Vancouver, London</td>
                         <td>40+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="40">
                         <td>Microsoft Solitaire Collection</td>
                         <td>Card Game</td>
                         <td>40+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="40">
                         <td>Stardew Valley</td>
                         <td>Simulation, RPG</td>
                         <td>40+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="40">
                         <td>Super Mario Bros. Wii</td>
                         <td>Platformer, Action</td>
                         <td>40+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="30">
                         <td>Angry Birds</td>
                         <td>Puzzle, Physics-based</td>
                         <td>30+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="30">
                         <td>Bad Piggies</td>
                         <td>Puzzle</td>
                         <td>30+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="30">
                         <td>Bloons TD 5</td>
                         <td>Tower Defense, Strategy</td>
                         <td>30+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="30">
                         <td>Dave the Diver</td>
                         <td>Adventure RPG, Simulation</td>
                         <td>30+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="30">
                         <td>Super Mario Bros. DS</td>
                         <td>Action-Platformer</td>
                         <td>30+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="30">
                         <td>Tales Runner</td>
                         <td>MMO Racing, Platformer</td>
                         <td>30+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="25">
                         <td>Cult of the Lamb</td>
                         <td>Action Roguelike, Management Simulation</td>
                         <td>25+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="20">
                         <td>Bloons TD 6</td>
                         <td>Tower Defense, Strategy</td>
                         <td>20+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="20">
                         <td>Dragon Flight</td>
                         <td>Vertical Shooter, Endless Runner</td>
                         <td>20+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="20">
                         <td>Elden Ring</td>
                         <td>Action RPG</td>
                         <td>20+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="20">
                         <td>It Takes Two</td>
                         <td>Action-adventure, Platformer</td>
                         <td>20+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="20">
                         <td>Mario & Luigi: Bowser's Inside Story</td>
                         <td>RPG</td>
                         <td>20+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="20">
                         <td>Mario & Luigi: Partners in Time</td>
                         <td>RPG</td>
                         <td>20+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="20">
                         <td>Nintendo Smash Bros. Wii</td>
                         <td>Fighting, Platform Fighter</td>
                         <td>20+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="20">
                         <td>Ori and the Will of the Wisps</td>
                         <td>Metroidvania, Platform-adventure</td>
                         <td>20+ 시간 (100%)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="20">
                         <td>Plants vs. Zombies</td>
                         <td>Tower Defense</td>
                         <td>20+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="20">
                         <td>Vampire Survivors</td>
                         <td>Action Roguelike, Bullet Heaven</td>
                         <td>20+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="20">
                         <td>초 극장판 개구리 중사 케로로 더 무비 천공대모험</td>
                         <td>Action</td>
                         <td>20+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="15">
                         <td>Air Rider</td>
                         <td>Racing</td>
                         <td>15+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="15">
                         <td>Don't starve together</td>
                         <td>Survival, Sandbox</td>
                         <td>15+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="15">
                         <td>Stacklands</td>
                         <td>Card-based, Simulation, Roguelike</td>
                         <td>15+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Angry Birds: Space</td>
                         <td>Puzzle, Physics-based</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>BADLAND</td>
                         <td>Action-adventure, Platformer</td>
                         <td>10+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Baldur's Gate 3</td>
                         <td>RPG</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Cookie Run: Munjil Munjil</td>
                         <td>Puzzle, Match-3</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Death's Door</td>
                         <td>Action-adventure, RPG</td>
                         <td>10+ 시간 (100%)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Forza Horizon 5</td>
                         <td>Racing, Open World</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Frostrain</td>
                         <td>Strategy, Roguelike, Deck Builder</td>
                         <td>10+ 시간 (100%)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Goat Simulator</td>
                         <td>Simulation, Sandbox</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Grand Theft Auto: Chinatown Wars</td>
                         <td>Action-adventure, Open World</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>High On Life</td>
                         <td>FPS, Action-adventure</td>
                         <td>10+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Kirby Mass Attack</td>
                         <td>Action Platformer</td>
                         <td>10+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Kirby: Super Star Ultra</td>
                         <td>Action-platformer</td>
                         <td>10+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Kirby's Return to Dream Land Deluxe</td>
                         <td>Action Platformer</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Maple Story 2</td>
                         <td>MMORPG</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Marble Rivers</td>
                         <td>Casual, Simulation</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Mario Kart 7</td>
                         <td>Kart Racing</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Mario Kart DS</td>
                         <td>Kart Racing</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Mario Kart Wii</td>
                         <td>Kart Racing</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Microsoft Mahjong</td>
                         <td>Puzzle, Tile-matching</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Microsoft Minesweeper</td>
                         <td>Puzzle</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Minecraft Dungeons</td>
                         <td>Dungeon Crawler, Action-adventure, RPG</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Moonlighter</td>
                         <td>Action RPG, Shop Management</td>
                         <td>10+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Overcooked! 2</td>
                         <td>Co-op, Party, Simulation</td>
                         <td>10+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Placid Plastic Duck Simulator</td>
                         <td>Idle Game, Simulation</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Professor Layton and the Curious Village</td>
                         <td>Puzzle Adventure</td>
                         <td>10+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Rhythm Heaven</td>
                         <td>Rhythm Game, Minigame Collection</td>
                         <td>10+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Slay The Spire</td>
                         <td>Roguelike, Deck-building</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>SUPERHOT</td>
                         <td>FPS, Puzzle, Strategy</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Super Paper Mario</td>
                         <td>Action RPG, Platformer</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Supraland</td>
                         <td>Metroidvania, Puzzle-adventure</td>
                         <td>10+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Supraland: Six Inches Under</td>
                         <td>First-Person Metroidvania, Puzzle-adventure</td>
                         <td>10+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>Tetris</td>
                         <td>Puzzle</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="10">
                         <td>산나비</td>
                         <td>Action, Adventure, Platformer</td>
                         <td>10+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="8">
                         <td>Husky Express</td>
                         <td>MMORPG, Adventure</td>
                         <td>8+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="7">
                         <td>Lies of P</td>
                         <td>Action RPG, Soulslike</td>
                         <td>7+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Apex Legends</td>
                         <td>Battle Royale, FPS</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Asphalt 9: Legends</td>
                         <td>Racing, Arcade</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Bloons TD 4</td>
                         <td>Tower Defense</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Borderlands 3</td>
                         <td>Looter-shooter, Action RPG</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Celeste</td>
                         <td>Platformer, Action</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Dead Cells</td>
                         <td>Roguevania, Action-platformer</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Far Cry 5</td>
                         <td>Action-adventure, FPS, Open World</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>INSIDE</td>
                         <td>Puzzle-platformer, Horror</td>
                         <td>5+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Minecraft Legends</td>
                         <td>Action RTS</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Neon Abyss</td>
                         <td>Roguelike, Run and Gun, Action-platformer</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Paragon: The Overprime</td>
                         <td>MOBA, TPS</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>PowerWash Simulator</td>
                         <td>Simulation, Casual</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Psychonauts 2</td>
                         <td>Platform-adventure, Action-adventure</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Red Dead Redemption 2</td>
                         <td>Action-adventure, Open World</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Skull: The Hero Slayer</td>
                         <td>Roguelike, Action Platformer</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Starfield</td>
                         <td>Action RPG, Open World</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Super Mario Bros.2 DS</td>
                         <td>Platformer</td>
                         <td>5+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Unrailed</td>
                         <td>Co-op, Arcade, Puzzle, Strategy</td>
                         <td>5+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="5">
                         <td>Unrailed 2: Back on Track</td>
                         <td>Co-op, Roguelite, Action</td>
                         <td>5+ 시간</td>
                     </tr>
-                    
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Arrow A Row</td>
                         <td>Casual, Strategy, Endless Runner</td>
                         <td>3+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Assassin's Creed Odyssey</td>
                         <td>Action RPG, Adventure</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Atomic Heart</td>
                         <td>Action RPG, FPS</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Cities: Skylines 2</td>
                         <td>City-building, Simulation</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Cuphead</td>
                         <td>Run and Gun, Platformer</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Descenders</td>
                         <td>Sports, Roguelike, Racing</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Donut Country</td>
                         <td>Puzzle, Adventure</td>
                         <td>3+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Escape Academy</td>
                         <td>Puzzle, Adventure</td>
                         <td>3+ 시간 (100%)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>First Descendant</td>
                         <td>Looter Shooter, Action RPG</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>For the King</td>
                         <td>Roguelike RPG, Turn-based Strategy</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Frog Detective: The Entire Mystery</td>
                         <td>Adventure, Puzzle</td>
                         <td>3+ 시간 (100%)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Gang Beasts</td>
                         <td>Party, Fighting</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Ghostwire Tokyo</td>
                         <td>Action-adventure, Horror</td>
                         <td>3+ 시간</td>
-
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Grounded</td>
                         <td>Survival, Action-adventure</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Gunfire Reborn</td>
                         <td>FPS, Roguelite, Action RPG</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Headbangers: Rhythm Royale</td>
                         <td>Rhythm, Battle Royale</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Hi-Fi RUSH</td>
                         <td>Rhythm-action, Beat 'em up</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>HITMAN</td>
                         <td>Stealth, Action-adventure</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Hogwarts Legacy</td>
                         <td>Action RPG, Open World</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Just Cause 4</td>
                         <td>Action-adventure, Open World</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Lonely Mountains: Downhill</td>
                         <td>Sports, Racing</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>McPixel 3</td>
                         <td>Puzzle, Adventure</td>
                         <td>3+ 시간 (100%)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Mini Metro</td>
                         <td>Puzzle, Strategy, Simulation</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>PAC MAN</td>
                         <td>Maze, Arcade</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Portal 2</td>
                         <td>Puzzle-platformer, Action-adventure</td>
                         <td>3+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Readfall</td>
                         <td>FPS, Open World</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Surgeon Simulator 2</td>
                         <td>Simulation, Action, Puzzle</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Trove</td>
                         <td>MMORPG, Sandbox, Action RPG</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Two Point Campus</td>
                         <td>Simulation, Management</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Veiled Experts</td>
                         <td>Tactical Shooter, TPS</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Venba</td>
                         <td>Narrative, Cooking, Puzzle</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>Warframe</td>
                         <td>Third-person Shooter, Action RPG</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="3">
                         <td>XCOM 2</td>
                         <td>Turn-based Tactics, Strategy</td>
                         <td>3+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>A Short Hike</td>
                         <td>Adventure, Indie</td>
                         <td>2+ 시간 (100%)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Asgard's Fall: Origins</td>
                         <td>Roguelite, Bullet Heaven, Action</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Assassin's Creed Syndicate</td>
                         <td>Action-adventure, Stealth, Open World</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Crypt of the NecroDancer</td>
                         <td>Roguelike, Rhythm Game</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Disc Room</td>
                         <td>Action, Puzzle, Survival</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Dreamscaper</td>
                         <td>Action Roguelike, RPG</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Enter the Gungeon</td>
                         <td>Bullet Hell Roguelike, Dungeon Crawler</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Exit the Gungeon</td>
                         <td>Bullet Hell, Platformer, Roguelike</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Figment</td>
                         <td>Action-adventure, Puzzle, Platformer</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Goat Simulator 3</td>
                         <td>Action, Sandbox, Simulation</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Golf With Your Friends</td>
                         <td>Sports, Casual, Party</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Gotham Knights</td>
                         <td>Action RPG, Open World</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>HOT WHEELS UNLEASHED</td>
                         <td>Racing, Arcade</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Human Fall Flat</td>
                         <td>Puzzle, Platformer, Physics-based</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Kingdom Come Deliverance</td>
                         <td>Action RPG, Open World</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>LIMBO</td>
                         <td>Puzzle-platformer, Horror</td>
                         <td>2+ 시간 (100%)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Maquette</td>
                         <td>Puzzle, Adventure</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Mincrosoft Sudoku</td>
                         <td>Puzzle, Logic</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Nobody Saves the World</td>
                         <td>Action RPG, Dungeon Crawler</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Outer Worlds</td>
                         <td>Action RPG</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>PAYDAY 3</td>
                         <td>Co-op FPS</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Peppa Pig</td>
                         <td>Edutainment, Adventure</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Phantom Abyss</td>
                         <td>Action-adventure, Roguelike, Platformer</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Somerville</td>
                         <td>Adventure, Puzzle</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Spelunky 2</td>
                         <td>Action, Platformer, Roguelike</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Superliminal</td>
                         <td>Puzzle, Adventure</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>TEKKEN 7</td>
                         <td>Fighting</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>The Binding of Isaac</td>
                         <td>Roguelike, Action-adventure, Dungeon Crawler</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>The Binding of Isaac: Rebirth</td>
                         <td>Action RPG, Roguelike</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>The Finals</td>
                         <td>FPS, Team-based Shooter</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>The Last Case of Benedict Fox</td>
                         <td>Metroidvania, Action-adventure, RPG</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>TOEM</td>
                         <td>Adventure, Puzzle, Photography</td>
                         <td>2+ 시간 (100%)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>TUNIC</td>
                         <td>Action-adventure, Zelda-like</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Watch Dogs 2</td>
                         <td>Action-adventure, Open World, Stealth</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>Wo Long: Fallen Dynasty</td>
                         <td>Action RPG, Soulslike</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="2">
                         <td>데굴데굴 쫀득쫀득 괴혼</td>
                         <td>Action Puzzle</td>
                         <td>2+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="1">
                         <td>Die in Dungeon</td>
                         <td>Action, Adventure</td>
                         <td>1+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="1">
                         <td>Divide by Sheep</td>
                         <td>Puzzle</td>
                         <td>1+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="1">
                         <td>Doors - Paradox</td>
                         <td>Puzzle, Adventure</td>
                         <td>1+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="1">
                         <td>Helltaker</td>
                         <td>Puzzle, Adventure, Dating Sim</td>
                         <td>1+ 시간 (Clear)</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="1">
                         <td>Naraka: Bladepoint</td>
                         <td>Battle Royale, Action</td>
                         <td>1+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="1">
                         <td>Ravenlok</td>
                         <td>Action RPG, Adventure</td>
                         <td>1+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="1">
                         <td>Sifu</td>
                         <td>Beat 'em up, Action</td>
                         <td>1+ 시간</td>
                     </tr>
-                    <tr>
+                    <tr data-playtime="1">
                         <td>Trek to Yomi</td>
                         <td>Action-adventure, Side-scrolling</td>
                         <td>1+ 시간</td>
