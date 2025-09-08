@@ -1,740 +1,552 @@
-- name: League of Legends
-  playtime: 5000+
-  clear: ''
-  etc: ''
-- name: Mafia42
-  playtime: 1000+
-  clear: ''
-  etc: ''
-- name: Cartrider
-  playtime: 500+
-  clear: ''
-  etc: ''
-- name: Minecraft
-  playtime: 500+
-  clear: ''
-  etc: ''
-- name: Overwatch
-  playtime: 500+
-  clear: ''
-  etc: ''
-- name: GTA Online
-  playtime: 250+
-  clear: ''
-  etc: ''
-- name: 'Cookie Run: For Kakao'
-  playtime: 200+
-  clear: ''
-  etc: ''
-- name: 'Pokemon Series:'
-  playtime: 200+ (Clear)
-  clear: ''
-  etc: ''
-- name: Seven Knights
-  playtime: 200+
-  clear: ''
-  etc: ''
+- name: "League of Legends"
+  time: "5000+"
+  level: "에메랄드 / 플래티넘"
+- name: "Mafia42"
+  time: "1000+"
+  level: "약 7000판"
+- name: "Minecraft"
+  time: "1000+"
+  level: "다회차 플레이"
+- name: "Cartrider"
+  time: "500+"
+  level: "서비스 종료로 레벨 파악 실패"
+- name: "Overwatch"
+  time: "500+"
+  level: "골드"
+- name: "GTA Online"
+  time: "250+"
+  level: "195 lvl, 전체 부동산"
+- name: "Heroes of the Storm"
+  time: "200+"
+  level: "56 lvl"
+- name: "Cookie Run: For Kakao"
+  time: "200+"
+  level: "지옥 무한 달리기 등등"
+- name: "Pokemon Series"
+  time: "200+ (Clear)"
+  level: "Pearl, Platinum, SoulSilver, Black, Black 2, X --> 클리어"
+- name: "Seven Knights"
+  time: "200+"
+  level: "실버-->마스터"
 - name: "Sid Meier's Civilization V"
-  playtime: 150+
-  clear: ''
-  etc: ''
-- name: Terraria
-  playtime: 150+
-  clear: ''
-  etc: ''
-- name: Bubble Fighter
-  playtime: 100+
-  clear: ''
-  etc: ''
-- name: Cookie Clicker
-  playtime: 100+
-  clear: ''
-  etc: ''
-- name: 'Cookie Run: Kingdom'
-  playtime: 100+
-  clear: ''
-  etc: ''
-- name: GTA5
-  playtime: 100+
-  clear: ''
-  etc: ''
-- name: Maple Story
-  playtime: 100+
-  clear: ''
-  etc: ''
-- name: Modoo Marble
-  playtime: 100+
-  clear: ''
-  etc: ''
-- name: Palworld
-  playtime: 70+
-  clear: ''
-  etc: ''
+  time: "150+"
+  level: "다회 플레이"
+- name: "Terraria"
+  time: "150+ (Clear)"
+  level: "다회차 플레이"
+- name: "Bubble Fighter"
+  time: "100+"
+  level: ""
+- name: "Cookie Clicker"
+  time: "100+"
+  level: "다회차 플레이"
+- name: "Cookie Run: Kingdom"
+  time: "100+"
+  level: "49 lvl, 번영도:66,497,336점"
+- name: "GTA5"
+  time: "100+"
+  level: "다회차 플레이"
+- name: "Maple Story"
+  time: "100+"
+  level: "수 캐릭터 200+"
+- name: "Modoo Marble"
+  time: "100+"
+  level: "34 lvl"
+- name: "Palworld"
+  time: "70+ (Clear)"
+  level: "1회차 완료"
 - name: "Sid Meier's Civilization VI"
-  playtime: 62+
-  clear: ''
-  etc: ''
-- name: Bounce Ball
-  playtime: 50+
-  clear: ''
-  etc: ''
-- name: 'Cookie Run: Ovenbreak'
-  playtime: 50+
-  clear: ''
-  etc: ''
-- name: Hollow Knight
-  playtime: 50+
-  clear: ''
-  etc: ''
-- name: 'Kirby: Squeak Squad'
-  playtime: 50+ (Clear)
-  clear: ''
-  etc: ''
-- name: 'Pokemon Mystery Dungeon: Blue Rescue Team'
-  playtime: 50+ (Clear)
-  clear: ''
-  etc: ''
-- name: Cooking Mama
-  playtime: 40+ (Clear)
-  clear: ''
-  etc: ''
-- name: Cyberpunk 2077
-  playtime: 40+
-  clear: ''
-  etc: ''
-- name: Dragon Ball Wii
-  playtime: 40+ (Clear)
-  clear: ''
-  etc: ''
-- name: Hades
-  playtime: 40+
-  clear: ''
-  etc: ''
-- name: Microsoft Solitaire Collection
-  playtime: 40+
-  clear: ''
-  etc: ''
-- name: Stardew Valley
-  playtime: 40+
-  clear: ''
-  etc: ''
-- name: Super Mario Bros. Wii
-  playtime: 40+ (Clear)
-  clear: ''
-  etc: ''
-- name: Angry Birds
-  playtime: 30+
-  clear: ''
-  etc: ''
-- name: Angry Birds Space
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Bad Piggies
-  playtime: 30+
-  clear: ''
-  etc: ''
-- name: Bloons TD 5
-  playtime: 30+
-  clear: ''
-  etc: ''
-- name: Dave the Diver
-  playtime: 30+ (Clear)
-  clear: ''
-  etc: ''
-- name: Super Mario Bros. DS
-  playtime: 30+ (Clear)
-  clear: ''
-  etc: ''
-- name: Tales Runner
-  playtime: 30+
-  clear: ''
-  etc: ''
-- name: Cult of the Lamb
-  playtime: 25+ (Clear)
-  clear: ''
-  etc: ''
-- name: Bloons TD 6
-  playtime: 20+
-  clear: ''
-  etc: ''
-- name: Dragon Flight
-  playtime: 20+
-  clear: ''
-  etc: ''
-- name: Elden Ring
-  playtime: 20+
-  clear: ''
-  etc: ''
-- name: It Takes Two
-  playtime: 20+
-  clear: ''
-  etc: ''
+  time: "62+"
+  level: "다회 플레이"
+- name: "Bounce Ball"
+  time: "50+"
+  level: "32 Unknown Planet"
+- name: "Cookie Run: Ovenbreak"
+  time: "50+"
+  level: "68 lvl"
+- name: "Hollow Knight"
+  time: "50+ (Clear)"
+  level: "1회차 완료"
+- name: "Kirby: Squeak Squad"
+  time: "50+ (Clear)"
+  level: "다회차 플레이"
+- name: "Pokemon Mystery Dungeon: Blue Rescue Team"
+  time: "50+ (Clear)"
+  level: "1회차 완료"
+- name: "Cooking Mama"
+  time: "40+ (Clear)"
+  level: "다회차 플레이"
+- name: "Cyberpunk 2077"
+  time: "40+ (Clear)"
+  level: "1회차 완료"
+- name: "Dragon Ball Wii"
+  time: "40+ (Clear)"
+  level: "1회차 완료"
+- name: "Hades"
+  time: "40+ (Clear)"
+  level: "다회차 플레이"
+- name: "Microsoft Solitaire Collection"
+  time: "40+"
+  level: ""
+- name: "Stardew Valley"
+  time: "40+"
+  level: ""
+- name: "Super Mario Bros. Wii"
+  time: "40+ (Clear)"
+  level: "1회차 완료"
+- name: "Angry Birds"
+  time: "30+ (Clear)"
+  level: "다회차 플레이"
+- name: "Bad Piggies"
+  time: "30+"
+  level: "1회차 완료"
+- name: "Bloons TD 5"
+  time: "30+"
+  level: ""
+- name: "Dave the Diver"
+  time: "30+ (Clear)"
+  level: "1회차 완료"
+- name: "Super Mario Bros. DS"
+  time: "30+ (Clear)"
+  level: "다회차 플레이"
+- name: "Tales Runner"
+  time: "30+"
+  level: ""
+- name: "Cult of the Lamb"
+  time: "25+ (Clear)"
+  level: "일반 모드 1회차 완료"
+- name: "Bloons TD 6"
+  time: "20+"
+  level: ""
+- name: "Dragon Flight"
+  time: "20+"
+  level: ""
+- name: "Elden Ring"
+  time: "20+"
+  level: "49 lvl"
+- name: "It Takes Two"
+  time: "20+ (Clear)"
+  level: "1회차 완료"
 - name: "Mario & Luigi: Bowser's Inside Story"
-  playtime: 20+ (Clear)
-  clear: ''
-  etc: ''
-- name: 'Mario & Luigi: Partners in Time'
-  playtime: 20+ (Clear)
-  clear: ''
-  etc: ''
-- name: Nintendo Smash Bros. Wii
-  playtime: 20+
-  clear: ''
-  etc: ''
-- name: Ori and the Will of the Wisps
-  playtime: 20+ (100%)
-  clear: ''
-  etc: ''
-- name: 'Plants vs. Zombies'
-  playtime: 20+ (Clear)
-  clear: ''
-  etc: ''
-- name: Vampire Survivors
-  playtime: 20+
-  clear: ''
-  etc: ''
-- name: 극장판 개구리 중사 케로로 천공 대모험
-  playtime: 20+ (Clear)
-  clear: ''
-  etc: ''
-- name: Don't starve together
-  playtime: 15+
-  clear: ''
-  etc: ''
-- name: Stacklands
-  playtime: 15+
-  clear: ''
-  etc: ''
-- name: Air Rider
-  playtime: 11+
-  clear: ''
-  etc: ''
-- name: BADLAND
-  playtime: 10+ (Clear)
-  clear: ''
-  etc: ''
+  time: "20+ (Clear)"
+  level: "1회차 완료"
+- name: "Mario & Luigi: Partners in Time"
+  time: "20+ (Clear)"
+  level: "1회차 완료"
+- name: "Nintendo Smash Bros. Wii"
+  time: "20+ (Clear)"
+  level: "1회차 완료"
+- name: "Ori and the Will of the Wisps"
+  time: "20+ (100%)"
+  level: "100% 클리어"
+- name: "Plants vs. Zombies"
+  time: "20+ (Clear)"
+  level: "다회차 플레이"
+- name: "Vampire Survivors"
+  time: "20+"
+  level: "모든 아이템, 맵 언락"
+- name: "초 극장판 개구리 중사 케로로 더 무비 천공대모험"
+  time: "20+ (Clear)"
+  level: "1회차 완료"
+- name: "Don't starve together"
+  time: "15+"
+  level: ""
+- name: "Stacklands"
+  time: "15+ (Clear)"
+  level: "1회차 완료"
+- name: "Air Rider"
+  time: "10+"
+  level: "서비스 종료로 레벨 파악 실패"
+- name: "BADLAND"
+  time: "10+ (Clear)"
+  level: "다회차 플레이"
 - name: "Baldur's Gate 3"
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: 'Cookie Run: Munjil Munjil'
-  playtime: 10+
-  clear: ''
-  etc: ''
+  time: "10+"
+  level: ""
+- name: "Cookie Run: Munjil Munjil"
+  time: "10+"
+  level: ""
 - name: "Death's Door"
-  playtime: 10+ (100%)
-  clear: ''
-  etc: ''
-- name: Forza Horizon 5
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Frostrain
-  playtime: 10+ (100%)
-  clear: ''
-  etc: ''
-- name: Goat Simulator
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: 'Grand Theft Auto: Chinatown Wars'
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: High On Life
-  playtime: 10+ (Clear)
-  clear: ''
-  etc: ''
-- name: Kirby Mass Attack
-  playtime: 10+ (Clear)
-  clear: ''
-  etc: ''
-- name: 'Kirby: Super Star Ultra'
-  playtime: 10+ (Clear)
-  clear: ''
-  etc: ''
+  time: "10+ (100%)"
+  level: "100% 클리어"
+- name: "Forza Horizon 5"
+  time: "10+"
+  level: ""
+- name: "Frostrain"
+  time: "10+ (100%)"
+  level: "100% 클리어"
+- name: "Goat Simulator"
+  time: "10+"
+  level: ""
+- name: "Grand Theft Auto: Chinatown Wars"
+  time: "10+"
+  level: ""
+- name: "High On Life"
+  time: "10+ (Clear)"
+  level: "1회차 완료"
+- name: "Kirby Mass Attack"
+  time: "10+ (Clear)"
+  level: "1회차 완료"
+- name: "Kirby: Super Star Ultra"
+  time: "10+ (Clear)"
+  level: "1회차 완료"
 - name: "Kirby's Return to Dream Land Deluxe"
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Maple Story 2
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Marble Rivers
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: 'Mario & Sonic Olympic Series:'
-  playtime: Beijing
-  clear: Vancouver
-  etc: London
-- name: Mario Kart 7
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Mario Kart DS
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Mario Kart Wii
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Microsoft Mahjong
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Microsoft Minesweeper
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Minecraft Dungeons
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Moonlighter
-  playtime: 10+ (Clear)
-  clear: ''
-  etc: ''
-- name: 'Overcooked! 2'
-  playtime: 10+ (Clear)
-  clear: ''
-  etc: ''
-- name: Placid Plastic Duck Simulator
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Professor Layton and the Curious Village
-  playtime: 10+ (Clear)
-  clear: ''
-  etc: ''
-- name: Rhythm Heaven
-  playtime: 10+ (Clear)
-  clear: ''
-  etc: ''
-- name: Slay The Spire
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: SUPERHOT
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Super Paper Mario
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Supraland
-  playtime: 10+ (Clear)
-  clear: ''
-  etc: ''
-- name: 'Supraland: Six Inches Under'
-  playtime: 10+ (Clear)
-  clear: ''
-  etc: ''
-- name: Tetris
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: 산나비
-  playtime: 10+
-  clear: ''
-  etc: ''
-- name: Husky Express
-  playtime: 7+
-  clear: ''
-  etc: ''
-- name: Lies of P
-  playtime: 7+
-  clear: ''
-  etc: ''
-- name: Apex Legends
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: 'Asphalt 9: Legends'
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Bloons TD 4
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Borderlands 3
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Celeste
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Dead Cells
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Far Cry 5
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: INSIDE
-  playtime: 5+ (Clear)
-  clear: ''
-  etc: ''
-- name: Minecraft Legends
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Neon Abyss
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: 'Paragon: The Overprime'
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: PowerWash Simulator
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Psychonauts 2
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Red Dead Redemption 2
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: 'Skull: The Hero Slayer'
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Starfield
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Super Mario Bros.2 DS
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Unrailed
-  playtime: 5+ (Clear)
-  clear: ''
-  etc: ''
-- name: 'Unrailed 2: Back on Track'
-  playtime: 5+
-  clear: ''
-  etc: ''
-- name: Arrow A Row
-  playtime: 3+ (Clear)
-  clear: ''
-  etc: ''
+  time: "10+"
+  level: ""
+- name: "Maple Story 2"
+  time: "10+"
+  level: ""
+- name: "Marble Rivers"
+  time: "10+"
+  level: ""
+- name: "Mario & Sonic Olympic Series:"
+  time: "10+"
+  level: "Beijing, Vancouver, London"
+- name: "Mario Kart 7"
+  time: "10+"
+  level: ""
+- name: "Mario Kart DS"
+  time: "10+"
+  level: ""
+- name: "Mario Kart Wii"
+  time: "10+"
+  level: ""
+- name: "Microsoft Mahjong"
+  time: "10+"
+  level: ""
+- name: "Microsoft Minesweeper"
+  time: "10+"
+  level: ""
+- name: "Minecraft Dungeons"
+  time: "10+"
+  level: ""
+- name: "Moonlighter"
+  time: "10+ (Clear)"
+  level: "일반 모드 1회차 완료"
+- name: "Overcooked! 2"
+  time: "10+ (Clear)"
+  level: "1회차 완료"
+- name: "Placid Plastic Duck Simulator"
+  time: "10+"
+  level: ""
+- name: "Professor Layton and the Curious Village"
+  time: "10+ (Clear)"
+  level: "1회차 완료"
+- name: "Rhythm Heaven"
+  time: "10+ (100%)"
+  level: "100% 클리어"
+- name: "SANABI"
+  time: "10+"
+  level: "80%"
+- name: "Slay The Spire"
+  time: "10+"
+  level: ""
+- name: "SUPERHOT"
+  time: "10+ (Clear)"
+  level: "1회차 완료"
+- name: "Super Paper Mario"
+  time: "10+"
+  level: ""
+- name: "Supraland"
+  time: "10+ (Clear)"
+  level: "1회차 완료"
+- name: "Supraland: Six Inches Under"
+  time: "10+ (Clear)"
+  level: "1회차 완료"
+- name: "Tetris"
+  time: "10+"
+  level: ""
+- name: "Husky Express"
+  time: "7+"
+  level: ""
+- name: "Lies of P"
+  time: "7+"
+  level: ""
+- name: "Apex Legends"
+  time: "5+"
+  level: ""
+- name: "Asphalt 9: Legends"
+  time: "5+"
+  level: ""
+- name: "Bloons TD 4"
+  time: "5+"
+  level: ""
+- name: "Borderlands 3"
+  time: "5+"
+  level: ""
+- name: "Celeste"
+  time: "5+"
+  level: ""
+- name: "Dead Cells"
+  time: "5+"
+  level: ""
+- name: "Far Cry 5"
+  time: "5+"
+  level: ""
+- name: "INSIDE"
+  time: "5+ (Clear)"
+  level: "1회차 완료"
+- name: "Minecraft Legends"
+  time: "5+"
+  level: ""
+- name: "Neon Abyss"
+  time: "5+"
+  level: ""
+- name: "Paragon: The Overprime"
+  time: "5+"
+  level: ""
+- name: "PowerWash Simulator"
+  time: "5+"
+  level: ""
+- name: "Psychonauts 2"
+  time: "5+"
+  level: ""
+- name: "Red Dead Redemption 2"
+  time: "5+"
+  level: ""
+- name: "Skull: The Hero Slayer"
+  time: "5+"
+  level: ""
+- name: "Starfield"
+  time: "5+"
+  level: ""
+- name: "Super Mario Bros.2 DS"
+  time: "5+"
+  level: ""
+- name: "Unrailed"
+  time: "5+ (Clear)"
+  level: "1회차 완료"
+- name: "Unrailed 2: Back on Track"
+  time: "5+"
+  level: ""
+- name: "Arrow A Row"
+  time: "3+ (Clear)"
+  level: "다회차 플레이"
 - name: "Assassin's Creed Odyssey"
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Atomic Heart
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: 'Cities: Skylines 2'
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Cuphead
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Descenders
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Donut Country
-  playtime: 3+ (Clear)
-  clear: ''
-  etc: ''
-- name: Escape Academy
-  playtime: 3+ (100%)
-  clear: ''
-  etc: ''
-- name: First Descendant
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: For the King
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: 'Frog Detective: The Entire Mystery'
-  playtime: 3+ (100%)
-  clear: ''
-  etc: ''
-- name: Gang Beasts
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Ghostwire Tokyo
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Grounded
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Gunfire Reborn
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: 'Headbangers: Rhythm Royale'
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Hi-Fi RUSH
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: HITMAN
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Hogwarts Legacy
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Just Cause 4
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: 'Lonely Mountains: Downhill'
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: McPixel 3
-  playtime: 3+ (100%)
-  clear: ''
-  etc: ''
-- name: Mini Metro
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: PAC MAN
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Portal 2
-  playtime: 3+ (Clear)
-  clear: ''
-  etc: ''
-- name: Readfall
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Surgeon Simulator 2
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Trove
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Two Point Campus
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Veiled Experts
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Venba
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: Warframe
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: XCOM 2
-  playtime: 3+
-  clear: ''
-  etc: ''
-- name: A Short Hike
-  playtime: 2+ (100%)
-  clear: ''
-  etc: ''
+  time: "3+"
+  level: ""
+- name: "Atomic Heart"
+  time: "3+"
+  level: ""
+- name: "Cities: Skylines 2"
+  time: "3+"
+  level: ""
+- name: "Cuphead"
+  time: "3+"
+  level: "40%"
+- name: "Descenders"
+  time: "3+"
+  level: ""
+- name: "Donut Country"
+  time: "3+ (Clear)"
+  level: "1회차 완료"
+- name: "Escape Academy"
+  time: "3+ (100%)"
+  level: "100% 클리어"
+- name: "First Descendant"
+  time: "3+"
+  level: ""
+- name: "For the King"
+  time: "3+"
+  level: ""
+- name: "Frog Detective: The Entire Mystery"
+  time: "3+ (100%)"
+  level: "100% 클리어"
+- name: "Gang Beasts"
+  time: "3+"
+  level: ""
+- name: "Ghostwire Tokyo"
+  time: "3+"
+  level: ""
+- name: "Grounded"
+  time: "3+"
+  level: ""
+- name: "Gunfire Reborn"
+  time: "3+"
+  level: ""
+- name: "Headbangers: Rhythm Royale"
+  time: "3+"
+  level: ""
+- name: "Hi-Fi RUSH"
+  time: "3+"
+  level: ""
+- name: "HITMAN"
+  time: "3+"
+  level: ""
+- name: "Hogwarts Legacy"
+  time: "3+"
+  level: "5 lvl"
+- name: "Just Cause 4"
+  time: "3+"
+  level: ""
+- name: "Lonely Mountains: Downhill"
+  time: "3+"
+  level: ""
+- name: "McPixel 3"
+  time: "3+ (100%)"
+  level: "100% 클리어"
+- name: "Mini Metro"
+  time: "3+"
+  level: "75%"
+- name: "PAC MAN"
+  time: "3+"
+  level: ""
+- name: "Portal 2"
+  time: "3+ (Clear)"
+  level: "1회차 완료"
+- name: "Readfall"
+  time: "3+"
+  level: ""
+- name: "Surgeon Simulator 2"
+  time: "3+"
+  level: ""
+- name: "Trove"
+  time: "3+"
+  level: ""
+- name: "Two Point Campus"
+  time: "3+"
+  level: ""
+- name: "Veiled Experts"
+  time: "3+"
+  level: ""
+- name: "Venba"
+  time: "3+"
+  level: ""
+- name: "Warframe"
+  time: "3+"
+  level: ""
+- name: "XCOM 2"
+  time: "3+"
+  level: ""
+- name: "A Short Hike"
+  time: "2+ (100%)"
+  level: "100% 클리어"
 - name: "Asgard's Fall: Origins"
-  playtime: 2+
-  clear: ''
-  etc: ''
+  time: "2+ (100%)"
+  level: "100% 클리어"
 - name: "Assassin's Creed Syndicate"
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Crypt of the NecroDancer
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Disc Room
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Dreamscaper
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Enter the Gungeon
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Exit the Gungeon
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Figment
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Goat Simulator 3
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Golf With Your Friends
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Gotham Knights
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: HOT WHEELS UNLEASHED
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Human Fall Flat
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Kingdom Come Deliverance
-  playtime: '2'
-  clear: ''
-  etc: ''
-- name: LIMBO
-  playtime: 2+ (100%)
-  clear: ''
-  etc: ''
-- name: Maquette
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Mincrosoft Sudoku
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Nobody Saves the World
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Outer Worlds
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: PAYDAY 3
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Peppa Pig
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Phantom Abyss
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Somerville
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Spelunky 2
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Superliminal
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: TEKKEN 7
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: The Binding of Isaac
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: 'The Binding of Isaac: Rebirth'
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: The Finals
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: The Last Case of Benedict Fox
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: TOEM
-  playtime: 2+ (100%)
-  clear: ''
-  etc: ''
-- name: TUNIC
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Watch Dogs 2
-  playtime: '2'
-  clear: ''
-  etc: ''
-- name: 'Wo Long: Fallen Dynasty'
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: 데굴데굴 쫀득쫀득 괴혼
-  playtime: 2+
-  clear: ''
-  etc: ''
-- name: Die in Dungeon
-  playtime: '1'
-  clear: ''
-  etc: ''
-- name: Divide by Sheep
-  playtime: 1+
-  clear: ''
-  etc: ''
-- name: Doors - Paradox
-  playtime: 1+
-  clear: ''
-  etc: ''
-- name: Helltaker
-  playtime: 1+ (Clear)
-  clear: ''
-  etc: ''
-- name: 'Naraka: Bladepoint'
-  playtime: 1+
-  clear: ''
-  etc: ''
-- name: Ravenlok
-  playtime: 1+
-  clear: ''
-  etc: ''
-- name: Sifu
-  playtime: 1+
-  clear: ''
-  etc: ''
-- name: Trek to Yomi
-  playtime: 1+
-  clear: ''
-  etc: ''
-
-  playtime: 1+
-  clear: ''
-  etc: ''
+  time: "2+"
+  level: ""
+- name: "Crypt of the NecroDancer"
+  time: "2+"
+  level: "50%"
+- name: "Disc Room"
+  time: "2+"
+  level: ""
+- name: "Dreamscaper"
+  time: "2+"
+  level: ""
+- name: "Enter the Gungeon"
+  time: "2+"
+  level: ""
+- name: "Exit the Gungeon"
+  time: "2+"
+  level: ""
+- name: "Figment"
+  time: "2+"
+  level: ""
+- name: "Goat Simulator 3"
+  time: "2+"
+  level: ""
+- name: "Golf With Your Friends"
+  time: "2+"
+  level: ""
+- name: "Gotham Knights"
+  time: "2+"
+  level: ""
+- name: "HOT WHEELS UNLEASHED"
+  time: "2+"
+  level: ""
+- name: "Human Fall Flat"
+  time: "2+"
+  level: ""
+- name: "Kingdom Come Deliverance"
+  time: "2+"
+  level: ""
+- name: "LIMBO"
+  time: "2+ (100%)"
+  level: "100% 클리어"
+- name: "Maquette"
+  time: "2+"
+  level: ""
+- name: "Mincrosoft Sudoku"
+  time: "2+"
+  level: ""
+- name: "Nobody Saves the World"
+  time: "2+"
+  level: ""
+- name: "Outer Worlds"
+  time: "2+"
+  level: ""
+- name: "PAYDAY 3"
+  time: "2+"
+  level: ""
+- name: "Peppa Pig"
+  time: "2+"
+  level: ""
+- name: "Phantom Abyss"
+  time: "2+"
+  level: "다회차 플레이"
+- name: "Somerville"
+  time: "2+"
+  level: ""
+- name: "Spelunky 2"
+  time: "2+"
+  level: ""
+- name: "Superliminal"
+  time: "2+ (Clear)"
+  level: "1회차 완료"
+- name: "TEKKEN 7"
+  time: "2+"
+  level: ""
+- name: "The Binding of Isaac"
+  time: "2+"
+  level: ""
+- name: "The Binding of Isaac: Rebirth"
+  time: "2+"
+  level: ""
+- name: "The Finals"
+  time: "2+"
+  level: ""
+- name: "The Last Case of Benedict Fox"
+  time: "2+"
+  level: ""
+- name: "TOEM"
+  time: "2+ (100%)"
+  level: "100% 클리어"
+- name: "TUNIC"
+  time: "2+"
+  level: ""
+- name: "Watch Dogs 2"
+  time: "2+"
+  level: ""
+- name: "Wo Long: Fallen Dynasty"
+  time: "2+"
+  level: ""
+- name: "We Love Katamari Reroll"
+  time: "2+"
+  level: ""
+- name: "Die in Dungeon"
+  time: "1+ (Clear)"
+  level: "1회차 완료"
+- name: "Divide by Sheep"
+  time: "1+"
+  level: ""
+- name: "Doors - Paradox"
+  time: "1+"
+  level: "70%"
+- name: "Helltaker"
+  time: "1+ (Clear)"
+  level: "1회차 완료"
+- name: "Naraka: Bladepoint"
+  time: "1+"
+  level: ""
+- name: "Ravenlok"
+  time: "1+"
+  level: ""
+- name: "Sifu"
+  time: "1+"
+  level: ""
+- name: "Trek to Yomi"
+  time: "1+"
+  level: ""
