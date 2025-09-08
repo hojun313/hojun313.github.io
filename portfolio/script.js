@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggle.textContent = theme === 'dark' ? '💡' : '🌙';
     }
 
-    const storedTheme = localStorage.getItem('theme');
-    const defaultTheme = storedTheme || 'dark';
+    const defaultTheme = 'dark';
     setTheme(defaultTheme);
 
     themeToggle.addEventListener('click', () => {

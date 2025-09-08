@@ -1,0 +1,740 @@
+- name: League of Legends
+  playtime: 5000+
+  clear: ''
+  etc: ''
+- name: Mafia42
+  playtime: 1000+
+  clear: ''
+  etc: ''
+- name: Cartrider
+  playtime: 500+
+  clear: ''
+  etc: ''
+- name: Minecraft
+  playtime: 500+
+  clear: ''
+  etc: ''
+- name: Overwatch
+  playtime: 500+
+  clear: ''
+  etc: ''
+- name: GTA Online
+  playtime: 250+
+  clear: ''
+  etc: ''
+- name: 'Cookie Run: For Kakao'
+  playtime: 200+
+  clear: ''
+  etc: ''
+- name: 'Pokemon Series:'
+  playtime: 200+ (Clear)
+  clear: ''
+  etc: ''
+- name: Seven Knights
+  playtime: 200+
+  clear: ''
+  etc: ''
+- name: "Sid Meier's Civilization V"
+  playtime: 150+
+  clear: ''
+  etc: ''
+- name: Terraria
+  playtime: 150+
+  clear: ''
+  etc: ''
+- name: Bubble Fighter
+  playtime: 100+
+  clear: ''
+  etc: ''
+- name: Cookie Clicker
+  playtime: 100+
+  clear: ''
+  etc: ''
+- name: 'Cookie Run: Kingdom'
+  playtime: 100+
+  clear: ''
+  etc: ''
+- name: GTA5
+  playtime: 100+
+  clear: ''
+  etc: ''
+- name: Maple Story
+  playtime: 100+
+  clear: ''
+  etc: ''
+- name: Modoo Marble
+  playtime: 100+
+  clear: ''
+  etc: ''
+- name: Palworld
+  playtime: 70+
+  clear: ''
+  etc: ''
+- name: "Sid Meier's Civilization VI"
+  playtime: 62+
+  clear: ''
+  etc: ''
+- name: Bounce Ball
+  playtime: 50+
+  clear: ''
+  etc: ''
+- name: 'Cookie Run: Ovenbreak'
+  playtime: 50+
+  clear: ''
+  etc: ''
+- name: Hollow Knight
+  playtime: 50+
+  clear: ''
+  etc: ''
+- name: 'Kirby: Squeak Squad'
+  playtime: 50+ (Clear)
+  clear: ''
+  etc: ''
+- name: 'Pokemon Mystery Dungeon: Blue Rescue Team'
+  playtime: 50+ (Clear)
+  clear: ''
+  etc: ''
+- name: Cooking Mama
+  playtime: 40+ (Clear)
+  clear: ''
+  etc: ''
+- name: Cyberpunk 2077
+  playtime: 40+
+  clear: ''
+  etc: ''
+- name: Dragon Ball Wii
+  playtime: 40+ (Clear)
+  clear: ''
+  etc: ''
+- name: Hades
+  playtime: 40+
+  clear: ''
+  etc: ''
+- name: Microsoft Solitaire Collection
+  playtime: 40+
+  clear: ''
+  etc: ''
+- name: Stardew Valley
+  playtime: 40+
+  clear: ''
+  etc: ''
+- name: Super Mario Bros. Wii
+  playtime: 40+ (Clear)
+  clear: ''
+  etc: ''
+- name: Angry Birds
+  playtime: 30+
+  clear: ''
+  etc: ''
+- name: Angry Birds Space
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Bad Piggies
+  playtime: 30+
+  clear: ''
+  etc: ''
+- name: Bloons TD 5
+  playtime: 30+
+  clear: ''
+  etc: ''
+- name: Dave the Diver
+  playtime: 30+ (Clear)
+  clear: ''
+  etc: ''
+- name: Super Mario Bros. DS
+  playtime: 30+ (Clear)
+  clear: ''
+  etc: ''
+- name: Tales Runner
+  playtime: 30+
+  clear: ''
+  etc: ''
+- name: Cult of the Lamb
+  playtime: 25+ (Clear)
+  clear: ''
+  etc: ''
+- name: Bloons TD 6
+  playtime: 20+
+  clear: ''
+  etc: ''
+- name: Dragon Flight
+  playtime: 20+
+  clear: ''
+  etc: ''
+- name: Elden Ring
+  playtime: 20+
+  clear: ''
+  etc: ''
+- name: It Takes Two
+  playtime: 20+
+  clear: ''
+  etc: ''
+- name: "Mario & Luigi: Bowser's Inside Story"
+  playtime: 20+ (Clear)
+  clear: ''
+  etc: ''
+- name: 'Mario & Luigi: Partners in Time'
+  playtime: 20+ (Clear)
+  clear: ''
+  etc: ''
+- name: Nintendo Smash Bros. Wii
+  playtime: 20+
+  clear: ''
+  etc: ''
+- name: Ori and the Will of the Wisps
+  playtime: 20+ (100%)
+  clear: ''
+  etc: ''
+- name: 'Plants vs. Zombies'
+  playtime: 20+ (Clear)
+  clear: ''
+  etc: ''
+- name: Vampire Survivors
+  playtime: 20+
+  clear: ''
+  etc: ''
+- name: 극장판 개구리 중사 케로로 천공 대모험
+  playtime: 20+ (Clear)
+  clear: ''
+  etc: ''
+- name: Don't starve together
+  playtime: 15+
+  clear: ''
+  etc: ''
+- name: Stacklands
+  playtime: 15+
+  clear: ''
+  etc: ''
+- name: Air Rider
+  playtime: 11+
+  clear: ''
+  etc: ''
+- name: BADLAND
+  playtime: 10+ (Clear)
+  clear: ''
+  etc: ''
+- name: "Baldur's Gate 3"
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: 'Cookie Run: Munjil Munjil'
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: "Death's Door"
+  playtime: 10+ (100%)
+  clear: ''
+  etc: ''
+- name: Forza Horizon 5
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Frostrain
+  playtime: 10+ (100%)
+  clear: ''
+  etc: ''
+- name: Goat Simulator
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: 'Grand Theft Auto: Chinatown Wars'
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: High On Life
+  playtime: 10+ (Clear)
+  clear: ''
+  etc: ''
+- name: Kirby Mass Attack
+  playtime: 10+ (Clear)
+  clear: ''
+  etc: ''
+- name: 'Kirby: Super Star Ultra'
+  playtime: 10+ (Clear)
+  clear: ''
+  etc: ''
+- name: "Kirby's Return to Dream Land Deluxe"
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Maple Story 2
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Marble Rivers
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: 'Mario & Sonic Olympic Series:'
+  playtime: Beijing
+  clear: Vancouver
+  etc: London
+- name: Mario Kart 7
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Mario Kart DS
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Mario Kart Wii
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Microsoft Mahjong
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Microsoft Minesweeper
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Minecraft Dungeons
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Moonlighter
+  playtime: 10+ (Clear)
+  clear: ''
+  etc: ''
+- name: 'Overcooked! 2'
+  playtime: 10+ (Clear)
+  clear: ''
+  etc: ''
+- name: Placid Plastic Duck Simulator
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Professor Layton and the Curious Village
+  playtime: 10+ (Clear)
+  clear: ''
+  etc: ''
+- name: Rhythm Heaven
+  playtime: 10+ (Clear)
+  clear: ''
+  etc: ''
+- name: Slay The Spire
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: SUPERHOT
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Super Paper Mario
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Supraland
+  playtime: 10+ (Clear)
+  clear: ''
+  etc: ''
+- name: 'Supraland: Six Inches Under'
+  playtime: 10+ (Clear)
+  clear: ''
+  etc: ''
+- name: Tetris
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: 산나비
+  playtime: 10+
+  clear: ''
+  etc: ''
+- name: Husky Express
+  playtime: 7+
+  clear: ''
+  etc: ''
+- name: Lies of P
+  playtime: 7+
+  clear: ''
+  etc: ''
+- name: Apex Legends
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: 'Asphalt 9: Legends'
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Bloons TD 4
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Borderlands 3
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Celeste
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Dead Cells
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Far Cry 5
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: INSIDE
+  playtime: 5+ (Clear)
+  clear: ''
+  etc: ''
+- name: Minecraft Legends
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Neon Abyss
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: 'Paragon: The Overprime'
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: PowerWash Simulator
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Psychonauts 2
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Red Dead Redemption 2
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: 'Skull: The Hero Slayer'
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Starfield
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Super Mario Bros.2 DS
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Unrailed
+  playtime: 5+ (Clear)
+  clear: ''
+  etc: ''
+- name: 'Unrailed 2: Back on Track'
+  playtime: 5+
+  clear: ''
+  etc: ''
+- name: Arrow A Row
+  playtime: 3+ (Clear)
+  clear: ''
+  etc: ''
+- name: "Assassin's Creed Odyssey"
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Atomic Heart
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: 'Cities: Skylines 2'
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Cuphead
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Descenders
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Donut Country
+  playtime: 3+ (Clear)
+  clear: ''
+  etc: ''
+- name: Escape Academy
+  playtime: 3+ (100%)
+  clear: ''
+  etc: ''
+- name: First Descendant
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: For the King
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: 'Frog Detective: The Entire Mystery'
+  playtime: 3+ (100%)
+  clear: ''
+  etc: ''
+- name: Gang Beasts
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Ghostwire Tokyo
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Grounded
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Gunfire Reborn
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: 'Headbangers: Rhythm Royale'
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Hi-Fi RUSH
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: HITMAN
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Hogwarts Legacy
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Just Cause 4
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: 'Lonely Mountains: Downhill'
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: McPixel 3
+  playtime: 3+ (100%)
+  clear: ''
+  etc: ''
+- name: Mini Metro
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: PAC MAN
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Portal 2
+  playtime: 3+ (Clear)
+  clear: ''
+  etc: ''
+- name: Readfall
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Surgeon Simulator 2
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Trove
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Two Point Campus
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Veiled Experts
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Venba
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: Warframe
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: XCOM 2
+  playtime: 3+
+  clear: ''
+  etc: ''
+- name: A Short Hike
+  playtime: 2+ (100%)
+  clear: ''
+  etc: ''
+- name: "Asgard's Fall: Origins"
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: "Assassin's Creed Syndicate"
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Crypt of the NecroDancer
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Disc Room
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Dreamscaper
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Enter the Gungeon
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Exit the Gungeon
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Figment
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Goat Simulator 3
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Golf With Your Friends
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Gotham Knights
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: HOT WHEELS UNLEASHED
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Human Fall Flat
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Kingdom Come Deliverance
+  playtime: '2'
+  clear: ''
+  etc: ''
+- name: LIMBO
+  playtime: 2+ (100%)
+  clear: ''
+  etc: ''
+- name: Maquette
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Mincrosoft Sudoku
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Nobody Saves the World
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Outer Worlds
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: PAYDAY 3
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Peppa Pig
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Phantom Abyss
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Somerville
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Spelunky 2
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Superliminal
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: TEKKEN 7
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: The Binding of Isaac
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: 'The Binding of Isaac: Rebirth'
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: The Finals
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: The Last Case of Benedict Fox
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: TOEM
+  playtime: 2+ (100%)
+  clear: ''
+  etc: ''
+- name: TUNIC
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Watch Dogs 2
+  playtime: '2'
+  clear: ''
+  etc: ''
+- name: 'Wo Long: Fallen Dynasty'
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: 데굴데굴 쫀득쫀득 괴혼
+  playtime: 2+
+  clear: ''
+  etc: ''
+- name: Die in Dungeon
+  playtime: '1'
+  clear: ''
+  etc: ''
+- name: Divide by Sheep
+  playtime: 1+
+  clear: ''
+  etc: ''
+- name: Doors - Paradox
+  playtime: 1+
+  clear: ''
+  etc: ''
+- name: Helltaker
+  playtime: 1+ (Clear)
+  clear: ''
+  etc: ''
+- name: 'Naraka: Bladepoint'
+  playtime: 1+
+  clear: ''
+  etc: ''
+- name: Ravenlok
+  playtime: 1+
+  clear: ''
+  etc: ''
+- name: Sifu
+  playtime: 1+
+  clear: ''
+  etc: ''
+- name: Trek to Yomi
+  playtime: 1+
+  clear: ''
+  etc: ''
+
+  playtime: 1+
+  clear: ''
+  etc: ''
