@@ -361,6 +361,25 @@ a[target="_blank"]::after {
     text-decoration: none;
 }
 
+.visit-button {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 12px 24px;
+    background-color: var(--link-color);
+    color: var(--container-bg);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.visit-button:hover {
+    background-color: var(--link-hover-color);
+    color: var(--bg-color);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
 .game-log-controls {
     text-align: center;
     margin-bottom: 20px;
