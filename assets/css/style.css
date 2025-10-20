@@ -185,6 +185,14 @@ body.page-hub {
   line-height: 1.8;
   font-size: 1.1rem;
 }
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  border-radius: 8px;
+}
 .post-content h2 {
   border-bottom: 1px solid #333;
   padding-bottom: 0.5rem;
