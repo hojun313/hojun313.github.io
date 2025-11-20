@@ -1,0 +1,468 @@
+/* --- 기본 스타일 (모든 페이지 공통) --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+/* --- 허브 페이지 전용 가운데 정렬 스타일 --- */
+body.page-hub {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hub-container { max-width: 600px; padding: 40px; }
+.hub-header h1 { font-size: 3rem; margin-bottom: 0.5rem; color: #FFFFFF; }
+.hub-header p { font-size: 1.2rem; color: #A0A0A0; margin-bottom: 2rem; }
+
+/* --- Hub Page - New Sections --- */
+.hub-nav {
+    display: flex;
+    flex-direction: column; /* Change to column for vertical layout */
+    gap: 30px; /* Increase gap for better separation */
+    width: 100%;
+}
+
+.hub-section {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+}
+
+.hub-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.hub-section h2 a {
+    color: #BB86FC;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.hub-section h2 a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.hub-post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hub-post-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.hub-post-list li:last-child {
+    border-bottom: none;
+}
+
+.hub-post-list a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.hub-post-list a:hover {
+    color: #BB86FC;
+}
+
+.hub-post-list .post-date {
+    color: #A0A0A0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
+/* --- Hub Page - About/Archive Links --- */
+.hub-section.link-section h2 {
+    margin-bottom: 0;
+}
+
+.content-container { max-width: 800px; margin: 40px auto; padding: 20px; background-color: #1e1e1e; border-radius: 8px; text-align: left; }
+.post-list { list-style: none; padding: 0; }
+.post-list li { margin-bottom: 1rem; font-size: 1.1rem; }
+.post-list .post-date { color: #A0A0A0; margin-right: 15px; font-size: 0.9rem; }
+.post-list a { color: #BB86FC; text-decoration: none; }
+.post-list a:hover { text-decoration: underline; }
+
+/* 페이지 헤더 스타일 */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  margin: 0;
+}
+
+.home-link {
+  color: #BB86FC;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.pagination {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination .page-number {
+  color: #888;
+}
+
+.pagination .btn {
+  color: #BB86FC;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #BB86FC;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .btn:hover {
+  background-color: #BB86FC;
+  color: #121212;
+}
+
+.pagination .btn.disabled {
+  color: #555;
+  border-color: #555;
+  cursor: not-allowed;
+}
+.pagination .btn.disabled:hover {
+  background-color: transparent;
+  color: #555;
+}
+
+
+/* 개별 포스트 스타일 */
+.post-header {
+  border-bottom: 1px solid #444;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.post-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.post-meta {
+  color: #aaa;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.post-meta .meta-divider {
+  margin: 0 0.5em;
+}
+.post-category {
+  font-weight: bold;
+}
+.post-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  border-radius: 8px;
+}
+.post-content h2 {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+}
+.post-tags .tag {
+  display: inline-block;
+  background-color: #333;
+  color: #BB86FC;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+  font-size: 0.85rem;
+}
+.back-to-list {
+  margin-top: 3rem;
+}
+
+/* 프로젝트 카드 스타일 */
+.project-card {
+    background: #23232b;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+    padding: 28px 20px 20px 20px;
+    width: 260px;
+    transition: transform 0.15s, box-shadow 0.15s;
+    text-align: left;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(187,134,252,0.18);
+    border-color: #BB86FC;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-card h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #BB86FC;
+}
+
+.project-card p {
+    margin: 0;
+    color: #bdbdbd;
+    font-size: 1em;
+}
+
+/* 프로젝트 페이지 헤더 및 네비게이션 스타일 */
+.projects-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.projects-header h1,
+.projects-title {
+    font-size: 2.7rem;
+    color: #BB86FC;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+.projects-header p,
+.projects-desc {
+    font-size: 1.15rem;
+    color: #bdbdbd;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.projects-nav {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.projects-nav a,
+.projects-back {
+    color: #BB86FC;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 24px;
+    border: 1px solid #BB86FC;
+    border-radius: 6px;
+    background: #23232b;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
+}
+
+.projects-nav a:hover,
+.projects-back:hover {
+    background: #BB86FC;
+    color: #23232b;
+}
+
+/* 프로젝트 카테고리 및 리스트 스타일 */
+.project-category {
+    margin-bottom: 3.5rem; /* 각 카테고리 섹션 하단 여백 */
+    padding-top: 1.5rem;
+    border-top: 1px solid #333; /* 섹션 구분선 */
+}
+
+.project-category:first-of-type {
+    border-top: none; /* 첫 번째 섹션에는 구분선 없음 */
+    padding-top: 0;
+}
+
+.category-title {
+    font-size: 2rem; /* 카테고리 제목 크기 */
+    color: #BB86FC; /* 강조 색상 */
+    text-align: center;
+    margin-bottom: 2rem; /* 제목과 카드 목록 사이 여백 */
+    font-weight: 700;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    justify-content: center; /* 카드들을 중앙 정렬 */
+    margin-bottom: 2rem; /* 리스트 하단 여백 */
+}
+
+/* --- [수정됨] 블로그 글 목록 전용 스타일 --- */
+.blog-list-container {
+  max-width: 700px;
+  margin: 48px auto; /* 위아래 여백 추가 */
+  padding: 32px 24px 40px 24px;
+  background: #1e1e1e; 
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+.blog-list-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #FFFFFF; /* 제목 색상 강조 */
+  margin-bottom: 2.2rem;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.blog-post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-post-item {
+  background: #2a2a32; 
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  padding: 22px 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  border: 1.5px solid transparent; /* 테두리 영역 확보 */
+  position: relative;
+}
+.blog-post-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 28px rgba(187,134,252,0.15);
+  border-color: #BB86FC;
+}
+
+/* HTML 구조 변경에 따라 h2 태그로 선택자 수정 */
+.blog-post-item h2.blog-post-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #BB86FC;
+  margin: 0 0 0.5rem 0; 
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.blog-post-item:hover h2.blog-post-title {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.blog-post-date {
+  color: #A0A0A0;
+  font-size: 0.9rem; 
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+/* HTML 구조 변경에 따라 p 태그로 선택자 수정 */
+.blog-post-item p.blog-post-summary {
+  color: #d0c9e6;
+  font-size: 1.05rem;
+  margin: 0; 
+  line-height: 1.6;
+}
+
+/* --- 반응형 디자인 --- */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%; /* 작은 화면에서 카드를 전체 너비로 */
+        max-width: 300px; /* 최대 너비 지정 */
+    }
+    .projects-list {
+        flex-direction: column; /* 작은 화면에서 세로로 정렬 */
+        align-items: center; /* 세로 정렬 시 중앙 정렬 */
+    }
+    .category-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+  /* 블로그 목록 반응형 스타일 */
+  .blog-list-container {
+    padding: 24px 16px;
+    margin: 24px auto;
+  }
+  .blog-list-title {
+    font-size: 2rem;
+  }
+  .blog-post-item {
+    padding: 18px 20px;
+  }
+  .blog-post-item h2.blog-post-title {
+    font-size: 1.2rem;
+  }
+  .blog-post-item p.blog-post-summary {
+    font-size: 1rem;
+  }
+
+  /* --- Hub Page - Media Queries --- */
+    .hub-container {
+        padding: 20px;
+    }
+    .hub-header h1 {
+        font-size: 2.5rem;
+    }
+    .hub-header p {
+        font-size: 1.1rem;
+    }
+    .hub-section h2 {
+        font-size: 1.3rem;
+    }
+    .hub-post-list a {
+        font-size: 1rem;
+    }
+}
+
+/* --- New Hub Bottom Row Styles --- */
+.hub-bottom-row {
+    display: flex;
+    gap: 20px; /* Adjust gap as needed */
+}
+
+.hub-section-small {
+    flex: 1; /* Make all sections in the row have equal width */
+    text-align: center; /* Center the text */
+}
+
+.hub-section-small h2 {
+    font-size: 1.2rem; /* Smaller font size for the sub-links */
+    margin: 0;
+}
