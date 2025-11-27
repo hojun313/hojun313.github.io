@@ -401,3 +401,107 @@ a[target="_blank"]::after {
     background-color: var(--link-hover-color);
     transform: translateY(-2px);
 }
+
+/* Portfolio Deep Dive Styles */
+.back-link {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.case-study-card {
+    background-color: var(--table-row-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cs-header {
+    background-color: var(--table-header-bg);
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cs-header h2 {
+    margin: 0 0 10px 0;
+    border-bottom: none;
+    color: var(--heading-color);
+}
+
+.cs-quote {
+    font-style: italic;
+    color: var(--link-color);
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.cs-content {
+    padding: 20px;
+}
+
+.cs-block {
+    margin-bottom: 25px;
+}
+
+.cs-block:last-child {
+    margin-bottom: 0;
+}
+
+.cs-block h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.cs-block ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.cs-block li {
+    margin-bottom: 5px;
+}
+
+/* Obstacle Block Styling */
+.cs-obstacle {
+    background-color: rgba(255, 82, 82, 0.1); /* Light Red tint */
+    border-left: 4px solid #ff5252;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+html[data-theme='light'] .cs-obstacle {
+    background-color: rgba(255, 82, 82, 0.05);
+}
+
+.cs-obstacle h3 {
+    color: #ff5252;
+    border-bottom-color: rgba(255, 82, 82, 0.3);
+}
+
+/* Solution Block Styling */
+.cs-solution {
+    background-color: rgba(76, 215, 172, 0.1); /* Light Green tint */
+    border-left: 4px solid #46D7AC;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+html[data-theme='light'] .cs-solution {
+    background-color: rgba(46, 204, 113, 0.05);
+    border-left-color: #2ECC71;
+}
+
+html[data-theme='light'] .cs-solution h3 {
+    color: #2ECC71;
+    border-bottom-color: rgba(46, 204, 113, 0.3);
+}
+
+.cs-solution h3 {
+    color: #46D7AC;
+    border-bottom-color: rgba(76, 215, 172, 0.3);
+}

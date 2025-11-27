@@ -1,0 +1,8 @@
+https://hojun313.github.io/
+분석글, 체험기들과 개발 일지, 프로젝트 등이 있는 블로그입니다.
+
+https://hojun313.github.io/portfolio/
+상호작용이 가능한 포트폴리오 웹버전입니다.
+
+https://github.com/hojun313
+깃허브입니다.

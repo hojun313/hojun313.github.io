@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="이호준의 포트폴리오 상세 기술서. 프로젝트별 문제 해결 과정과 의사결정 배경을 다룹니다.">
+    <title>Hojun - Portfolio Deep Dive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../아이콘.png" type="image/png">
+</head>
+
+<body>
+    <div class="content-container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <button id="theme-toggle"
+                style="background: none; border: none; cursor: pointer; font-size: 1.5em; color: inherit;">💡</button>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h1>Portfolio Deep Dive</h1>
+            <p>프로젝트 개발 과정에서의 <strong>고민</strong>, <strong>장애물</strong>, 그리고 <strong>해결책</strong>에 대한 이야기입니다.</p>
+        </div>
+
+        <!-- 1. RecycleQ -->
+        <section class="case-study-card">
+            <div class="cs-header">
+                <h2>♻️ RecycleQ (분리수거 퀴즈 앱)</h2>
+                <p class="cs-quote">"기술적 오버엔지니어링을 경계하고, 사용자의 접근성을 최우선으로 선택하다."</p>
+            </div>
+
+            <div class="cs-content">
+                <div class="cs-block">
+                    <h3>배경 (Context)</h3>
+                    <p>한국의 복잡한 분리수거 시스템을 어려워하는 외국인(여자친구)을 위해 직관적인 학습 도구를 만들고자 했습니다.</p>
+                </div>
+
+                <div class="cs-block cs-obstacle">
+                    <h3>🚧 직면한 장애물 (The Obstacle)</h3>
+                    <ul>
+                        <li>초기에는 익숙한 Unity나 Android Studio를 사용하여 앱으로 개발하려 했습니다.</li>
+                        <li>하지만 '간단한 퀴즈'라는 핵심 기능에 비해 엔진이 무겁고, 사용자가 앱을 설치해야 하는 진입 장벽이 존재했습니다.</li>
+                        <li>타겟 유저가 가볍게 정보를 확인하고 싶어 하는 상황에서 앱 설치는 불필요한 depth였습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="cs-block cs-solution">
+                    <h3>💡 극복 및 해결 (The Solution)</h3>
+                    <ul>
+                        <li>과감하게 네이티브 앱 개발을 중단하고, <strong>Web (HTML/CSS/JavaScript)</strong> 기반의 웹 앱으로 전환했습니다.</li>
+                        <li>별도의 설치 없이 URL만으로 접근 가능하도록 GitHub Pages로 배포했습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="cs-block">
+                    <h3>왜 이 방법인가? (Why)</h3>
+                    <p>프로젝트의 본질인 '정보 전달'과 '접근성'에 집중하기 위함입니다. 기술적 화려함보다 사용자가 1초라도 빨리 기능을 사용할 수 있는 것이 중요하다고 판단했습니다.</p>
+                </div>
+
+                <div class="cs-block">
+                    <h3>결과 (Result)</h3>
+                    <p>개발 및 배포 시간이 단축되었고, 사용자에게 링크 하나로 쉽게 공유할 수 있어 접근성이 대폭 향상되었습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Eco Challenge Run -->
+        <section class="case-study-card">
+            <div class="cs-header">
+                <h2>🏃 환경 챌린지 (Eco Challenge Run)</h2>
+                <p class="cs-quote">"초보 팀원들과 함께하는 프로젝트: 리더십은 코딩 실력이 아니라 소통에서 나온다."</p>
+            </div>
+
+            <div class="cs-content">
+                <div class="cs-block">
+                    <h3>배경 (Context)</h3>
+                    <p>동아리 내에서 진행한 팀 프로젝트로, 퀴즈와 러닝 게임을 결합한 안드로이드 게임입니다.</p>
+                </div>
+
+                <div class="cs-block cs-obstacle">
+                    <h3>🚧 직면한 장애물 (The Obstacle)</h3>
+                    <ul>
+                        <li>팀원 대부분이 개발 경험이 적은 초보자였고, 협업 툴(Git) 사용에 미숙했습니다.</li>
+                        <li>각자 작업한 코드를 합칠 때마다 충돌(Conflict)이 발생하고, 개발 속도가 현저히 저하되었습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="cs-block cs-solution">
+                    <h3>💡 극복 및 해결 (The Solution)</h3>
+                    <ul>
+                        <li><strong>PM(프로젝트 매니저)</strong>로서 코드 작성보다 <strong>개발 환경 및 프로세스 구축</strong>에 우선순위를 두었습니다.</li>
+                        <li>명확한 Git 브랜치 전략(Git Flow)을 수립하고, 팀원들을 위한 'Git 협업 가이드라인' 문서를 작성하여 교육했습니다.</li>
+                        <li>정기적인 코드 리뷰 시간을 갖고, 충돌 해결을 직접 돕기보다 해결하는 방법을 가이드했습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="cs-block">
+                    <h3>왜 이 방법인가? (Why)</h3>
+                    <p>혼자 빠르게 개발하는 것보다, 팀 전체의 생산성을 높이는 것이 프로젝트 완주에 필수적이라 판단했습니다.</p>
+                </div>
+
+                <div class="cs-block">
+                    <h3>결과 (Result)</h3>
+                    <p>팀원들의 협업 툴 숙련도가 향상되어 개발 후반부에는 충돌 없이 원활한 통합이 가능했습니다. 성공적으로 구글 플레이 스토어에 출시했습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. BuilDeck -->
+        <section class="case-study-card">
+            <div class="cs-header">
+                <h2>🃏 빌덱 (BuilDeck)</h2>
+                <p class="cs-quote">"첫 실시간 멀티플레이 도전: 동기화의 늪을 건너다."</p>
+            </div>
+
+            <div class="cs-content">
+                <div class="cs-block">
+                    <h3>배경 (Context)</h3>
+                    <p>포커 족보를 활용한 1:1 전략 카드 배틀 게임입니다.</p>
+                </div>
+
+                <div class="cs-block cs-obstacle">
+                    <h3>🚧 직면한 장애물 (The Obstacle)</h3>
+                    <ul>
+                        <li>싱글 플레이 게임과 달리, 두 플레이어 간의 카드 덱 상태, 턴 진행, 체력 변화 등을 <strong>실시간으로 오차 없이 동기화</strong>해야 했습니다.
+                        </li>
+                        <li>네트워크 지연(Latency)으로 인해 상대방의 행동이 늦게 보이거나 데이터가 꼬이는 현상이 발생했습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="cs-block cs-solution">
+                    <h3>💡 극복 및 해결 (The Solution)</h3>
+                    <ul>
+                        <li>게임의 상태(State)를 엄격하게 관리하는 매니저 클래스를 설계하여, 클라이언트 간의 데이터 불일치를 최소화했습니다.</li>
+                        <li>네트워크 동기화 로직을 최적화하여 패킷 전송량을 줄이고, 중요도가 높은 데이터(체력, 턴 상태)를 우선적으로 처리하도록 구현했습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="cs-block">
+                    <h3>왜 이 방법인가? (Why)</h3>
+                    <p>턴제 게임 특성상 데이터의 무결성이 무엇보다 중요했기 때문에, 약간의 지연이 있더라도 확실한 데이터 동기화를 보장하는 방식을 택했습니다.</p>
+                </div>
+
+                <div class="cs-block">
+                    <h3>결과 (Result)</h3>
+                    <p>안정적인 1:1 매칭 및 배틀 시스템을 구현하여 플레이 스토어에 출시했습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Gen AI Haptic -->
+        <section class="case-study-card">
+            <div class="cs-header">
+                <h2>🤖 Gen AI Haptic (졸업 논문)</h2>
+                <p class="cs-quote">"데이터가 없다면 만든다: 생성형 AI의 새로운 활용처 모색"</p>
+            </div>
+
+            <div class="cs-content">
+                <div class="cs-block">
+                    <h3>배경 (Context)</h3>
+                    <p>시각 정보(이미지)를 촉각 정보(Haptic Heightmap)로 변환하는 연구입니다.</p>
+                </div>
+
+                <div class="cs-block cs-obstacle">
+                    <h3>🚧 직면한 장애물 (The Obstacle)</h3>
+                    <ul>
+                        <li>기존 연구들은 대부분 3D 모델링 데이터에 의존했고, 2D 이미지에서 직접 햅틱 데이터를 생성하는 학습 데이터셋(Dataset)이 거의 전무했습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="cs-block cs-solution">
+                    <h3>💡 극복 및 해결 (The Solution)</h3>
+                    <ul>
+                        <li>직접 데이터셋을 구축하기 위해 OpenCV를 활용하여 2D 이미지의 엣지(Edge)와 뎁스(Depth)를 추정하는 전처리 파이프라인을 설계했습니다.</li>
+                        <li>이를 기반으로 PyTorch를 이용해 이미지를 입력받아 하이트맵을 출력하는 생성 모델을 학습시켰습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="cs-block">
+                    <h3>왜 이 방법인가? (Why)</h3>
+                    <p>기존의 방식(3D 스캔 등)은 비용이 많이 들고 데이터 확보가 어렵기 때문에, AI를 통해 저비용으로 촉각 데이터셋을 구축할 수 있는 가능성을 입증하고 싶었습니다.</p>
+                </div>
+
+                <div class="cs-block">
+                    <h3>결과 (Result)</h3>
+                    <p>2D 이미지만으로도 그럴듯한 촉각 질감을 생성하는 모델을 구현하여 졸업 논문을 완성했습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="closing-message" style="margin-top: 50px;">
+            <p>끝까지 읽어주셔서 감사합니다.</p>
+            <a href="index.html" class="visit-button">메인으로 돌아가기</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

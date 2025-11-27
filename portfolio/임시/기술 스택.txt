@@ -1,0 +1,49 @@
+	언어 (Programming Languages)
+C++
+C#
+Python
+Java
+Kotlin
+JavaScript
+TypeScript
+Lua
+GDScript
+HTML/CSS
+
+	게임 엔진 (Game Engines)
+Unity
+Unreal Engine
+Godot Engine
+LÖVE
+Assault Cube (Cube Engine)
+
+	플랫폼 (Platforms)
+Android (APK 개발 경험)
+Web
+
+	라이브러리 & 프레임워크 (Libraries & Frameworks)
+OpenCV
+Node.js
+React/Vue
+
+	개발 및 기술 개념 (Development & Technical Concepts)
+컴퓨터 비전 (Computer Vision)
+소켓 통신 (Socket Communication)
+햅틱 피드백 (Haptic Feedback)
+UI/UX 분석
+
+	하드웨어 (Hardware)
+Arduino / Raspberry Pi
+솔레노이드 (Solenoid)
+
+	기획 및 관리 (Planning & Management)
+프로젝트 관리 (PM)
+시스템 기획
+레벨 디자인
+BM 및 이벤트 설계
+라이브 운영 (Live Ops)
+QA 일정 조율
+
+	기타 (Etc.)Git & GitHub
+데이터 분석
+블로그 운영 (GitHub Pages)
